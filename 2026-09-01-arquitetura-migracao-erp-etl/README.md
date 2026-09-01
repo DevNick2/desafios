@@ -1,6 +1,8 @@
-# Desenho de arquitetura: migração de ERP com pipeline de ETL e qualidade de dados
+# Desenho de arquitetura: migração de ERP com pipeline de ETL e qualidade de dados — Fase 2 de 2
 
 **Nível:** Especialista (staff/principal/Tech Lead)
+
+**Pré-requisito (Fase 1):** [desafios/2026-09-01-fundamentos-etl-powerbi](../2026-09-01-fundamentos-etl-powerbi/README.md) — conclua antes de retomar esta. Você ainda não tem experiência prática com ETL nem Power BI; a Fase 1 constrói essa base (pipeline ETL real, dashboard em Power BI) antes deste desenho de nível sênior/entrevista.
 
 ## Motivação
 
