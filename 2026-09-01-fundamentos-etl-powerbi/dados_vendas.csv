@@ -1,0 +1,168 @@
+id,data_venda,produto,categoria,quantidade,preco_unitario,cliente_id,estoque_atual
+81,2026-07-11,Argamassa ACIII 20kg,Construção,10,30.93,C1007,442
+156,19/04/2026,Luva de Segurança,EPI,48,"13,18",C1011,359
+138,2026-08-21,Lâmpada LED 15W,Elétrica,25,18.03,C1022,101
+139,2026-06-01,Chapa de Aço 2mm,Metais,45,95.11,C1007,52
+133,2026-03-05,Parafuso M6,Ferragens,13,0.48,C1019,78
+86,2026-07-29,Cimento CP-II 50kg,Construção,30,32.35,C1007,114
+137,2026-03-21,Tinta Acrílica Branca 18L,Pintura,,251.18,C1009,294
+47,2026-04-01,Capacete de Segurança,EPI,28,34.62,C1023,27
+66,2026-05-18,Chapa de Aço 2mm,Metais,14,91.32,C1004,477
+113,2026-07-13,Luva de Segurança,EPI,29,13.28,,456
+153,26/06/2026,Cimento CP-II 50kg,Construção,31,"33,6",C1015,229
+49,2026-07-24,Luva de Segurança,EPI,7,12.67,C1006,274
+31,2026-05-10,Lâmpada LED 15W,Elétrica,??,17.57,C1011,390
+25,2026-04-19,Lâmpada LED 15W,Elétrica,-39,17.25,C1012,305
+7,2026-02-25,Tinta Acrílica Branca 18L,Pintura,49,243.47,C1002,194
+38,2026-08-26,Cimento CP-II 50kg,Construção,35,34.07,C1022,102
+154,2026-01-24,Parafuso M6,Ferragens,19,0.44,C1022,124
+135,2026-04-30,Cimento CP-II 50kg,Construção,45,,C1011,85
+88,2026-07-17,Chapa de Aço 2mm,Metais,18,89.51,,204
+22,2026-07-11,Cabo Elétrico 2.5mm (rolo),Elétrica,38,"179,01",C1018,204
+15,2026-06-12,Argamassa ACIII 20kg,Construção,N/A,,C1007,83
+83,2026-08-25,Fita Isolante,Elétrica,22,,C1013,410
+48,2026-06-17,Lâmpada LED 15W,Elétrica,42,17.33,C1012,372
+150,2026-02-24,Tubo PVC 100mm (3m),Hidráulica,23,57.95,C1010,143
+44,2026-03-13,Cimento CP-II 50kg,Construção,43,"32,93",C1017,67
+28,2026-03-29,Lâmpada LED 15W,Elétrica,8,,C1005,232
+160,2026-07-14,Argamassa ACIII 20kg,Construção,-34,29.7,C1003,426
+46,2026-07-26,Tubo PVC 100mm (3m),Hidráulica,,53.61,C1003,337
+10,2026-03-17,Disjuntor 40A,Elétrica,41,22.98,C1011,295
+91,2026-06-02,Chapa de Aço 2mm,Metais,-28,89.45,C1010,223
+149,2026-03-28,Capacete de Segurança,EPI,2,34.99,C1010,93
+120,2026-04-30,Disjuntor 40A,Elétrica,27,21.37,C1013,199
+2,2026-07-08,Tinta Acrílica Branca 18L,Pintura,7,254.3,C1017,44
+128,2026-06-14,Chapa de Aço 2mm,Metais,28,86.99,C1014,93
+103,2026-02-13,Fita Isolante,Elétrica,43,6.25,C1016,339
+98,2026-03-17,Fita Isolante,Elétrica,36,6.28,C1013,340
+131,2026-05-01,Chapa de Aço 2mm,Metais,2,94.16,C1001,487
+79,2026-08-19,Parafuso M6,Ferragens,23,0.44,C1007,341
+85,2026-01-28,Fita Isolante,Elétrica,25,6.91,C1015,113
+18,2026-02-28,Parafuso M6,Ferragens,0x,0.47,C1012,137
+92,2026-05-11,Argamassa ACIII 20kg,Construção,8,28.9,C1018,97
+119,2026-06-30,Tinta Acrílica Branca 18L,Pintura,14,234.8,C1013,169
+29,2026-07-04,Parafuso M6,Ferragens,47,0.44,C1016,390
+112,2026-07-25,Tinta Acrílica Branca 18L,Pintura,muitas,254.01,C1017,304
+32,2026-05-19,Tinta Acrílica Branca 18L,Pintura,50,262.13,C1000,306
+40,2026-08-19,Tubo PVC 100mm (3m),Hidráulica,34,55.48,C1007,115
+94,2026-06-25,Disjuntor 40A,Elétrica,47,23.91,C1023,343
+34,2026-03-03,Cabo Elétrico 2.5mm (rolo),Elétrica,4,174.67,C1018,484
+13,2026-06-12,Tubo PVC 100mm (3m),Hidráulica,24,,C1011,107
+101,2026-04-21,Cimento CP-II 50kg,Construção,38,33.44,C1010,238
+27,2026-01-30,Fita Isolante,Elétrica,44,6.92,C1024,136
+99,2026-06-23,Capacete de Segurança,EPI,48,36.82,C1019,291
+93,2026-01-12,Cabo Elétrico 2.5mm (rolo),Elétrica,,179.19,C1016,473
+72,2026-02-22,Luva de Segurança,EPI,44,13.32,C1008,258
+151,2026-06-29,Argamassa ACIII 20kg,Construção,18,29.54,C1016,485
+71,2026-02-09,Disjuntor 40A,Elétrica,,22.0,C1006,367
+102,2026-04-24,Tubo PVC 100mm (3m),Hidráulica,44,53.78,C1015,406
+82,2026-07-24,Tinta Acrílica Branca 18L,Pintura,12,260.82,C1000,91
+116,2026-05-05,Disjuntor 40A,Elétrica,41,21.88,C1014,39
+50,2026-02-05,Tubo PVC 100mm (3m),Hidráulica,,53.56,C1014,127
+8,2026-04-02,Chapa de Aço 2mm,Metais,23,92.46,C1001,373
+124,2026-08-18,Argamassa ACIII 20kg,Construção,15,29.29,C1008,223
+17,2026-02-26,Disjuntor 40A,Elétrica,44,"22,13",C1024,397
+152,2026-01-22,Cimento CP-II 50kg,Construção,16,,C1015,284
+80,2026-04-01,Chapa de Aço 2mm,Metais,50,91.95,C1013,498
+59,2026-05-11,Parafuso M6,Ferragens,,0.48,C1002,304
+5,2026-05-20,Fita Isolante,Elétrica,27,,C1018,142
+115,2026-04-26,Tubo PVC 100mm (3m),Hidráulica,17,57.63,C1020,141
+122,2026-05-03,Capacete de Segurança,EPI,1,37.0,C1009,385
+111,2026-01-13,Tubo PVC 100mm (3m),Hidráulica,36,54.03,C1003,233
+108,2026-05-07,Capacete de Segurança,EPI,26,33.87,C1020,352
+126,2026-07-05,Capacete de Segurança,EPI,11,36.54,C1004,318
+158,2026-03-22,Cimento CP-II 50kg,Construção,8,34.01,C1024,353
+14,2026-03-10,Lâmpada LED 15W,Elétrica,45,19.29,C1020,36
+104,2026-06-08,Lâmpada LED 15W,Elétrica,22,17.32,C1024,120
+129,2026-03-08,Parafuso M6,Ferragens,25,0.45,C1014,167
+53,2026-05-04,Tubo PVC 100mm (3m),Hidráulica,14,58.43,C1001,84
+155,2026-06-19,Cabo Elétrico 2.5mm (rolo),Elétrica,38,177.64,C1017,271
+123,2026-08-07,Capacete de Segurança,EPI,27,35.19,,279
+100,2026-04-14,Cabo Elétrico 2.5mm (rolo),Elétrica,36,188.39,C1009,146
+63,2026-07-03,Lâmpada LED 15W,Elétrica,21,17.66,C1012,67
+125,2026-01-08,Tubo PVC 100mm (3m),Hidráulica,25,54.65,C1021,408
+147,2026-08-07,Luva de Segurança,EPI,16,13.65,,142
+24,2026-08-09,Parafuso M6,Ferragens,8,0.44,C1005,405
+36,2026-07-16,Disjuntor 40A,Elétrica,-9,21.56,C1015,484
+110,2026-02-26,Capacete de Segurança,EPI,12,36.38,C1022,265
+84,2026-08-10,Lâmpada LED 15W,Elétrica,48,19.0,C1008,81
+67,2026-08-14,Luva de Segurança,EPI,5,13.73,C1011,145
+61,2026-06-02,Argamassa ACIII 20kg,Construção,3,29.78,C1013,336
+23,2026-02-26,Luva de Segurança,EPI,9,13.11,C1002,386
+107,17/04/2026,Tubo PVC 100mm (3m),Hidráulica,41,56.37,C1022,356
+97,2026-05-10,Cabo Elétrico 2.5mm (rolo),Elétrica,20,184.53,C1010,206
+114,2026-04-20,Disjuntor 40A,Elétrica,36,22.48,C1005,380
+98,2026-03-17,Fita Isolante,Elétrica,36,6.28,C1013,340
+3,2026-04-19,Argamassa ACIII 20kg,Construção,3,27.57,C1006,119
+76,2026-01-03,Disjuntor 40A,Elétrica,,21.4,C1022,462
+144,2026-06-12,Luva de Segurança,EPI,30,13.44,C1013,90
+87,2026-06-18,Parafuso M6,Ferragens,13,0.45,C1008,442
+136,2026-06-05,Argamassa ACIII 20kg,Construção,48,30.15,C1024,419
+12,2026-01-21,Cabo Elétrico 2.5mm (rolo),Elétrica,15,189.15,C1012,142
+4,2026-06-04,Disjuntor 40A,Elétrica,,22.81,C1022,332
+33,2026-05-06,Luva de Segurança,EPI,,12.44,C1011,449
+78,2026-04-21,Tinta Acrílica Branca 18L,Pintura,,234.08,C1011,460
+42,2026-01-02,Cimento CP-II 50kg,Construção,5,33.87,C1001,117
+95,2026-04-04,Cimento CP-II 50kg,Construção,28,31.17,C1021,471
+56,2026-05-05,Fita Isolante,Elétrica,10,6.34,C1006,495
+6,2026-07-14,Parafuso M6,Ferragens,11,0.47,C1010,142
+127,2026-01-07,Disjuntor 40A,Elétrica,26,22.9,C1021,13
+11,2026-06-30,Cimento CP-II 50kg,Construção,5,31.07,C1007,395
+148,2026-03-04,Tubo PVC 100mm (3m),Hidráulica,49,55.57,C1019,342
+64,2026-06-15,Lâmpada LED 15W,Elétrica,20,18.17,C1024,479
+70,2026-01-27,Lâmpada LED 15W,Elétrica,-,17.72,C1003,380
+65,2026-01-03,Chapa de Aço 2mm,Metais,30,92.66,C1018,51
+35,2026-01-22,Chapa de Aço 2mm,Metais,47,,C1002,500
+52,2026-01-24,Parafuso M6,Ferragens,dez,0.48,C1005,208
+90,2026-02-15,Cabo Elétrico 2.5mm (rolo),Elétrica,38,191.37,C1008,19
+134,2026-02-02,Cimento CP-II 50kg,Construção,31,33.7,C1018,485
+89,2026-08-04,Lâmpada LED 15W,Elétrica,35,17.87,C1000,59
+140,2026-07-17,Fita Isolante,Elétrica,20,6.89,C1019,412
+130,2026-07-14,Luva de Segurança,EPI,25,12.72,C1013,129
+57,2026-05-29,Parafuso M6,Ferragens,48,0.46,C1023,160
+132,2026-02-27,Luva de Segurança,EPI,vinte,"12,37",C1020,20
+118,2026-01-21,Disjuntor 40A,Elétrica,9,21.62,C1012,355
+143,2026-08-06,Parafuso M6,Ferragens,27,0.48,C1003,221
+106,2026-03-04,Parafuso M6,Ferragens,31,0.46,C1024,37
+96,2026-06-09,Luva de Segurança,EPI,21,13.37,C1003,368
+77,2026-05-20,Tinta Acrílica Branca 18L,Pintura,3,259.33,C1018,282
+79,2026-08-19,Parafuso M6,Ferragens,23,0.44,C1007,341
+43,2026-08-20,Chapa de Aço 2mm,Metais,3,95.45,C1002,263
+77,2026-05-20,Tinta Acrílica Branca 18L,Pintura,3,259.33,C1018,282
+141,2026-07-23,Chapa de Aço 2mm,Metais,37,94.55,C1011,272
+37,2026-02-12,Disjuntor 40A,Elétrica,17,22.71,C1019,216
+69,2026-05-16,Lâmpada LED 15W,Elétrica,1,18.66,C1017,153
+39,2026-03-21,Fita Isolante,Elétrica,26,7.02,C1020,191
+58,13/01/2026,Parafuso M6,Ferragens,38,0.46,C1016,80
+30,2026-05-10,Tinta Acrílica Branca 18L,Pintura,7,260.48,C1009,430
+109,2026-08-17,Parafuso M6,Ferragens,49,0.48,C1003,398
+51,2026-04-24,Chapa de Aço 2mm,Metais,36,86.55,C1020,276
+110,2026-02-26,Capacete de Segurança,EPI,12,36.38,C1022,265
+145,2026-05-14,Fita Isolante,Elétrica,42,6.4,C1017,396
+19,2026-02-24,Chapa de Aço 2mm,Metais,37,95.65,C1010,108
+117,2026-03-15,Fita Isolante,Elétrica,16,6.4,C1010,457
+73,2026-03-06,Tubo PVC 100mm (3m),Hidráulica,4,52.91,,424
+74,2026-01-12,Cabo Elétrico 2.5mm (rolo),Elétrica,1,176.82,C1004,326
+60,2026-06-22,Chapa de Aço 2mm,Metais,16,90.12,C1018,126
+9,2026-05-18,Tubo PVC 100mm (3m),Hidráulica,8,59.21,C1012,40
+75,2026-02-11,Cabo Elétrico 2.5mm (rolo),Elétrica,-48,179.32,C1022,218
+121,2026-06-28,Argamassa ACIII 20kg,Construção,2,30.67,,294
+116,2026-05-05,Disjuntor 40A,Elétrica,41,21.88,C1014,39
+105,2026-03-21,Lâmpada LED 15W,Elétrica,15,18.99,C1004,12
+1,2026-01-29,Lâmpada LED 15W,Elétrica,2,18.84,C1007,114
+114,2026-04-20,Disjuntor 40A,Elétrica,36,22.48,C1005,380
+20,2026-05-08,Lâmpada LED 15W,Elétrica,26,19.17,C1020,234
+142,2026-06-19,Capacete de Segurança,EPI,24,33.08,C1020,174
+45,2026-08-28,Fita Isolante,Elétrica,37,6.66,C1007,401
+62,2026-05-25,Argamassa ACIII 20kg,Construção,34,28.64,C1008,104
+41,2026-03-28,Chapa de Aço 2mm,Metais,2,92.28,C1007,301
+21,2026-03-09,Tinta Acrílica Branca 18L,Pintura,9,240.61,C1017,275
+68,2026-04-23,Tinta Acrílica Branca 18L,Pintura,35,255.16,C1019,413
+55,2026-06-28,Capacete de Segurança,EPI,47,37.24,C1017,338
+134,2026-02-02,Cimento CP-II 50kg,Construção,31,33.7,C1018,485
+54,2026-01-01,Capacete de Segurança,EPI,25,33.96,C1014,146
+26,2026-05-16,Tubo PVC 100mm (3m),Hidráulica,17,59.19,C1000,348
+157,2026-03-11,Tubo PVC 100mm (3m),Hidráulica,20,54.05,C1003,369
+16,2026-04-08,Tubo PVC 100mm (3m),Hidráulica,18,59.33,C1020,352
+159,19/02/2026,Tinta Acrílica Branca 18L,Pintura,14,256.27,C1008,370
+146,2026-04-30,Tubo PVC 100mm (3m),Hidráulica,28,58.15,C1018,137

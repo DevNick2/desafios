@@ -25,7 +25,7 @@ Você já domina Python e Postgres — essa fase reaproveita isso: o "T" e o "L"
 
 ## Objetivo
 
-1. **Escolher ou gerar uma fonte de dados simples** — um CSV com dados de vendas ou estoque (pode ser um dataset público pequeno, ou gerado por você mesmo com dados fictícios, mas realistas: pelo menos 100-200 linhas, com alguns dados propositalmente "sujos" — nulos, duplicados, tipo errado — pra você ter o que validar de verdade).
+1. ~~Escolher ou gerar uma fonte de dados simples~~ — **já gerada:** [`dados_vendas.csv`](dados_vendas.csv), 167 linhas de vendas fictícias, com sujeira proposital espalhada (não documentada aqui de propósito — parte do exercício é você descobrir os problemas ao explorar os dados, não ler a lista antes). Se quiser, pode usar seu próprio dataset em vez deste — não é obrigatório usar o gerado.
 2. **Escrever um script Python de ETL completo**: Extract (lê o CSV), Transform (limpeza + pelo menos uma agregação/cálculo derivado + validação explícita que rejeita ou sinaliza linhas ruins), Load (grava o resultado limpo numa tabela Postgres).
 3. **Instalar o Power BI Desktop** (gratuito) e conectar na mesma base Postgres onde você carregou os dados.
 4. **Construir um dashboard simples** com pelo menos: um gráfico, uma tabela e um KPI/card numérico, a partir dos dados que você mesmo carregou.
