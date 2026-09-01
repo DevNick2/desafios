@@ -4,7 +4,7 @@
 
 ## Motivação
 
-Vaga real com call já marcada (Tech Lead Python, via Hunter KA, empresa contratante não revelada — análise completa em [`perfil_profissional/entrevistas/hunterka-tech-lead-python.md`](../../perfil_profissional/entrevistas/hunterka-tech-lead-python.md)). A vaga pede explicitamente: liderar "migração entre ERPs", processos de ETL, "garantir qualidade dos dados desde a origem", e conhecimento intermediário/avançado em Excel/BI. Nenhum desses três pontos (ETL, ferramentas de BI, migração de sistemas legados de dados) tem evidência documentada no seu perfil atual (`perfil_profissional/diagnostico_perfil.md`) — é um gap real, não hipotético, e a call já está marcada.
+Baseado em uma vaga real de Tech Lead Python (detalhes da empresa e do processo seletivo omitidos de propósito, para que este desafio possa ser compartilhado publicamente). A vaga pede explicitamente: liderar "migração entre ERPs", processos de ETL, "garantir qualidade dos dados desde a origem", e conhecimento intermediário/avançado em Excel/BI. Nenhum desses três pontos (ETL, ferramentas de BI, migração de sistemas legados de dados) tem evidência documentada no seu perfil atual (`perfil_profissional/diagnostico_perfil.md`) — é um gap real, não hipotético, e a call já está marcada.
 
 ## Contexto
 

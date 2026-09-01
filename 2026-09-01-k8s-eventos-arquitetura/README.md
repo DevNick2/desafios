@@ -1,14 +1,14 @@
-# Desenho: operação Kubernetes + arquitetura orientada a eventos (cenário Onebrain+Stoom) — Fase 2 de 2
+# Desenho: operação Kubernetes + arquitetura orientada a eventos — Fase 2 de 2
 
 **Nível:** Especialista (staff/principal/Tech Lead)
 
-**Pré-requisito (Fase 1):** [desafios/2026-09-01-onebrain-stoom-fundamentos-docker-k8s-eventos](../2026-09-01-onebrain-stoom-fundamentos-docker-k8s-eventos/README.md) — conclua antes de começar esta. Você ainda não tem experiência prática com Kubernetes; a Fase 1 constrói essa base (container, cluster local, objetos básicos, scaling manual) antes deste desenho de nível sênior/entrevista.
+**Pré-requisito (Fase 1):** [desafios/2026-09-01-fundamentos-docker-k8s-eventos](../2026-09-01-fundamentos-docker-k8s-eventos/README.md) — conclua antes de começar esta. Você ainda não tem experiência prática com Kubernetes; a Fase 1 constrói essa base (container, cluster local, objetos básicos, scaling manual) antes deste desenho de nível sênior/entrevista.
 
 ## Motivação
 
-Vaga real e ativa (Tech Lead Node.js/React, grupo Onebrain+Stoom — análise completa em [`perfil_profissional/entrevistas/onebrain-stoom-tech-lead-nodejs-react.md`](../../perfil_profissional/entrevistas/onebrain-stoom-tech-lead-nodejs-react.md)). As perguntas técnicas prováveis da entrevista (seção 2 daquele documento) cruzam dois eixos:
+Baseado em uma vaga real e ativa (Tech Lead Node.js/React; detalhes da empresa omitidos de propósito, para permitir compartilhar este desafio publicamente). As perguntas técnicas prováveis da entrevista cruzam dois eixos:
 
-1. **Kubernetes** — "Já operou Kubernetes em produção? Descreva um cenário de troubleshooting de scaling ou de uma falha de deploy." Este é um **gap real e não documentado**: a seção "5. Feitos no trabalho atual" daquele mesmo documento não tem nenhuma entrada de evidência para Kubernetes, ao contrário de arquitetura orientada a eventos (que você já tem — ver ponto 2).
+1. **Kubernetes** — "Já operou Kubernetes em produção? Descreva um cenário de troubleshooting de scaling ou de uma falha de deploy." Este é um **gap real e não documentado** no seu histórico técnico até aqui, ao contrário de arquitetura orientada a eventos (que você já tem — ver ponto 2).
 2. **Arquitetura orientada a eventos (SQS/SNS)** — aqui você já tem evidência real e forte (a migração do monólito para um serviço event-driven em Python publicando em SNS, com padrão Strangler Fig). O desafio não é aprender o conceito, é **integrar** essa experiência com a operação em Kubernetes — que é exatamente o tipo de pergunta de Tech Lead sênior ("como esses serviços rodariam em produção, escalando, sob falha?").
 
 ## Contexto

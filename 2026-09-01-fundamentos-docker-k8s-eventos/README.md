@@ -2,11 +2,11 @@
 
 **Nível:** Iniciante
 
-**Fase 2 (depende desta):** [desafios/2026-09-01-onebrain-stoom-k8s-eventos](../2026-09-01-onebrain-stoom-k8s-eventos/README.md)
+**Fase 2 (depende desta):** [desafios/2026-09-01-k8s-eventos-arquitetura](../2026-09-01-k8s-eventos-arquitetura/README.md)
 
 ## Motivação
 
-Você já tem um desafio Especialista pronto (Fase 2) sobre Kubernetes + arquitetura orientada a eventos, ligado à vaga real Onebrain+Stoom. Mas você não tem nenhuma experiência prática com Kubernetes ainda — então esse desafio quebra em duas fases: aqui você constrói a base hands-on (containerizar, subir um cluster local, entender os objetos básicos, escalar manualmente); na Fase 2 você aplica isso a um cenário de nível sênior/entrevista.
+Você já tem um desafio Especialista pronto (Fase 2) sobre Kubernetes + arquitetura orientada a eventos, ligado a uma vaga real de Tech Lead (detalhes da empresa omitidos de propósito, para permitir compartilhar este desafio publicamente). Mas você não tem nenhuma experiência prática com Kubernetes ainda — então esse desafio quebra em duas fases: aqui você constrói a base hands-on (containerizar, subir um cluster local, entender os objetos básicos, escalar manualmente); na Fase 2 você aplica isso a um cenário de nível sênior/entrevista.
 
 Você já tem event-driven na mão, só que sem container nem Kubernetes: o repositório `rabbitmq/` tem um publisher (`send.js`, `newTask.js`) e consumers (`worker.js`, `fairDispatchWorker.js`) reais usando `amqplib`. Essa fase reaproveita esse código como ponto de partida — você não vai escrever a lógica de fila do zero, vai aprender a *rodar isso em container e depois em Kubernetes*.
 
