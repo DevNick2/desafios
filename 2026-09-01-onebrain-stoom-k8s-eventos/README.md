@@ -1,6 +1,8 @@
-# Desenho: operação Kubernetes + arquitetura orientada a eventos (cenário Onebrain+Stoom)
+# Desenho: operação Kubernetes + arquitetura orientada a eventos (cenário Onebrain+Stoom) — Fase 2 de 2
 
 **Nível:** Especialista (staff/principal/Tech Lead)
+
+**Pré-requisito (Fase 1):** [desafios/2026-09-01-onebrain-stoom-fundamentos-docker-k8s-eventos](../2026-09-01-onebrain-stoom-fundamentos-docker-k8s-eventos/README.md) — conclua antes de começar esta. Você ainda não tem experiência prática com Kubernetes; a Fase 1 constrói essa base (container, cluster local, objetos básicos, scaling manual) antes deste desenho de nível sênior/entrevista.
 
 ## Motivação
 
