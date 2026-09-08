@@ -12,16 +12,22 @@ Gap identificado num processo seletivo real (detalhes da empresa omitidos de pro
 
 ## Pré-requisito
 
-Construa, dentro desta pasta, uma API Python simples e independente (ex. FastAPI) com:
+Construa, dentro desta pasta, uma API Python simples e independente (ex. FastAPI) que expõe um **catálogo de produtos** com a seguinte regra de negócio (implemente exatamente esta, não uma variação livre):
 
-- Pelo menos 2 endpoints reais (não "hello world") sobre um recurso com regra de negócio genuína — ex: um catálogo de produtos com cálculo de preço final considerando desconto e imposto, ou pedidos com transições de status válidas/inválidas.
-- Persistência simples (SQLite ou in-memory já resolve — não precisa de infraestrutura pesada).
+> **Preço final** = `preço_base × (1 − desconto_por_estoque) × (1 + imposto_categoria)`
+>
+> - `imposto_categoria`: Eletrônicos 12%, Livros 4%, Alimentos 7%, Vestuário 8%.
+> - `desconto_por_estoque`: 10% se estoque disponível > 500 unidades, 5% se > 100, 0% caso contrário. **O estoque disponível vem do sistema legado** (seção Contexto abaixo) — é o dado que amarra este pré-requisito ao resto do desafio.
+
+Endpoints mínimos: `GET /produtos` (lista, com preço final calculado) e `GET /produtos/{id}` (detalhe).
+
+**Dataset:** 20 produtos, com estes campos: `id`, `nome`, `categoria` (uma das 4 acima, pelo menos 4 produtos por categoria), `preco_base` (entre R$10 e R$2000). Inclua propositalmente: 1 produto com estoque zerado no legado (desconto 0%, testa o caminho de indisponibilidade), 1 produto só encontrado no catálogo mas ausente no legado (testa dado faltante), e ao menos 1 produto por faixa de desconto (>500, entre 100-500, <100).
 
 Essa API é construída do zero para este desafio, não é reaproveitamento de nenhum outro projeto seu — é o que torna o desafio independente e reproduzível por qualquer pessoa que o leia depois.
 
 ## Contexto
 
-A API do pré-requisito precisa expor um endpoint que depende de um **sistema legado externo simulado**: lento (latência alta, ~3-5s) e instável (falha uma fração perceptível das chamadas). O endpoint é consultado com alta frequência, e os dados do legado mudam pouco (ex.: a cada 15 minutos).
+O endpoint `GET /produtos` depende de um **sistema legado externo simulado** que fornece o estoque disponível de cada produto: lento (latência alta, ~3-5s) e instável (falha uma fração perceptível das chamadas). O endpoint é consultado com alta frequência, e o estoque do legado muda pouco (ex.: a cada 15 minutos).
 
 Você **não vai integrar com um SOAP real** — vai simular o comportamento do legado localmente (um serviço fake com `sleep` proposital e falha aleatória configurável, rodando em processo separado ou como stub HTTP), para poder testar os cenários de falha de forma controlada e repetível.
 

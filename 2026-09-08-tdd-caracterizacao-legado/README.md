@@ -12,15 +12,24 @@ Gap detectado de forma independente em dois processos seletivos recentes (detalh
 
 ## Pré-requisito
 
-Construa, dentro desta pasta, uma pequena API (a linguagem/framework é sua escolha) com pelo menos um endpoint que aplica uma regra de negócio genuína e com alguma complexidade real — ex: cálculo de frete com múltiplas faixas, motor de elegibilidade de desconto com várias condições encadeadas, validação de pedido com regras de transição de estado.
+Construa, dentro desta pasta, uma pequena API (a linguagem/framework é sua escolha) com um endpoint `POST /frete/calcular` que implementa exatamente esta regra de cálculo de frete:
+
+> - Peso ≤ 1kg: R$12 fixo — R$18 se a região for Norte.
+> - Peso entre 1kg e 5kg: R$12 + R$3 por kg excedente; **frete grátis** se o valor do pedido > R$300, exceto para as regiões Norte e Nordeste (nessas, o desconto não se aplica).
+> - Peso > 5kg: retorna erro 422 com corpo `{"erro": "FRETE_MANUAL"}` (fora do escopo automatizado).
+> - CEP inválido ou fora do Brasil: erro 400.
+
+Entrada: `peso_kg`, `cep`, `valor_pedido`. A região (Norte, Nordeste, Centro-Oeste, Sudeste, Sul) é derivada do prefixo do CEP — defina você mesmo o mapeamento de faixas de CEP por região (existe tabela pública de faixas por UF/região; qualquer mapeamento plausível serve).
 
 Construa essa API **sem nenhum teste automatizado** — como um legado real chegaria até você. Não escreva testes nesta fase: eles são o objeto do desafio, não a preparação dele.
 
+**Dataset:** ao subir a API, semeie (fixture/seed, não precisa ser dinâmico) 15 pedidos de exemplo cobrindo: um pedido de cada região, um pedido exatamente em 1kg e outro exatamente em 5kg (limites de faixa), um pedido de 1-5kg com valor > R$300 em região Sudeste (frete grátis) e outro nas mesmas condições em região Norte (sem o desconto), um pedido > 5kg (caminho de erro manual) e um CEP inválido (caminho de erro 400).
+
 ## Contexto
 
-Com o pré-requisito pronto (endpoint(s) com regra de negócio real, zero cobertura de testes), você vai adicionar uma funcionalidade nova pequena a esse endpoint, usando TDD estrito — e, como a mudança vai tocar código legado sem teste, proteger esse código antes de mexer nele.
+Com o pré-requisito pronto (endpoint de frete com regra real, zero cobertura de testes), você vai adicionar a seguinte funcionalidade nova, usando TDD estrito — e, como ela toca o código legado sem teste, proteger esse código antes de mexer nele:
 
-Exemplos de funcionalidade nova pequena o suficiente para o escopo: um filtro adicional numa listagem, uma regra de validação de negócio nova, um cálculo derivado a partir de campos já existentes, uma nova condição de autorização.
+> **Nova faixa: pedidos entre 5kg e 10kg** deixam de cair no erro `FRETE_MANUAL` e passam a ser calculados como R$45 fixo + 2% do valor do pedido como seguro — **exceto** na região Norte, que continua caindo em cotação manual (`FRETE_MANUAL`).
 
 ## Objetivo
 
