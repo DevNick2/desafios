@@ -1,0 +1,22 @@
+[
+  {"id": "P01", "name": "Smartphone X200", "category": "ELECTRONICS", "base_price": 1899.90},
+  {"id": "P02", "name": "Fone Bluetooth ZR", "category": "ELECTRONICS", "base_price": 249.90},
+  {"id": "P03", "name": "Notebook Ultra 14", "category": "ELECTRONICS", "base_price": 1999.00},
+  {"id": "P04", "name": "Smartwatch Fit 3", "category": "ELECTRONICS", "base_price": 599.00},
+  {"id": "P05", "name": "Caixa de Som Portátil", "category": "ELECTRONICS", "base_price": 189.90},
+  {"id": "P06", "name": "Clean Code", "category": "BOOKS", "base_price": 89.90},
+  {"id": "P07", "name": "O Poder do Hábito", "category": "BOOKS", "base_price": 39.90},
+  {"id": "P08", "name": "Sapiens", "category": "BOOKS", "base_price": 59.90},
+  {"id": "P09", "name": "Domain-Driven Design", "category": "BOOKS", "base_price": 129.90},
+  {"id": "P10", "name": "Estruturas de Dados em Python", "category": "BOOKS", "base_price": 79.90},
+  {"id": "P11", "name": "Café Especial 500g", "category": "FOOD", "base_price": 34.90},
+  {"id": "P12", "name": "Azeite Extra Virgem 500ml", "category": "FOOD", "base_price": 42.90},
+  {"id": "P13", "name": "Barra de Cereal Cx12", "category": "FOOD", "base_price": 24.90},
+  {"id": "P14", "name": "Mel Orgânico 300g", "category": "FOOD", "base_price": 29.90},
+  {"id": "P15", "name": "Chá Verde Premium", "category": "FOOD", "base_price": 19.90},
+  {"id": "P16", "name": "Camiseta Básica", "category": "CLOTHING", "base_price": 49.90},
+  {"id": "P17", "name": "Jaqueta Corta-Vento", "category": "CLOTHING", "base_price": 199.90},
+  {"id": "P18", "name": "Tênis Urbano", "category": "CLOTHING", "base_price": 289.90},
+  {"id": "P19", "name": "Calça Jeans Slim", "category": "CLOTHING", "base_price": 159.90},
+  {"id": "P20", "name": "Boné Aba Reta", "category": "CLOTHING", "base_price": 44.90}
+]
