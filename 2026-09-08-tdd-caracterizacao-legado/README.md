@@ -1,8 +1,8 @@
 # Desafio — TDD Estrito com Testes de Caracterização em Código Legado
 
 > Nível: **Avançado** (pl↔sr)
-> Aplicado a um caso real de um dos seus próprios repositórios (uma API sua já em produção/desenvolvimento, com pelo menos um endpoint hoje sem cobertura de testes).
-> Execução sem IA — apenas autocomplete padrão do editor.
+> Desafio autônomo — o pré-requisito abaixo é construído por você dentro desta pasta, sem depender de nenhum outro repositório seu.
+> Execução sem IA — apenas autocomplete padrão do editor. Isso inclui a construção do pré-requisito, não só o desafio em si.
 
 ---
 
@@ -10,11 +10,17 @@
 
 Gap detectado de forma independente em dois processos seletivos recentes (detalhes das empresas omitidos de propósito): testes automatizados/TDD aparecem como competência avaliada, mas você não tem hoje nenhum caso documentado de TDD aplicado na prática — tem esteira de CI/CD madura, mas o "como você desenvolve com testes primeiro" ainda é teórico. Este desafio força o ciclo red-green-refactor de verdade, e resolve o problema mais comum de quem tenta adotar TDD num código já existente: **como introduzir testes com segurança em algo que hoje não tem nenhum**, sem parar tudo para escrever suíte completa antes de qualquer mudança.
 
+## Pré-requisito
+
+Construa, dentro desta pasta, uma pequena API (a linguagem/framework é sua escolha) com pelo menos um endpoint que aplica uma regra de negócio genuína e com alguma complexidade real — ex: cálculo de frete com múltiplas faixas, motor de elegibilidade de desconto com várias condições encadeadas, validação de pedido com regras de transição de estado.
+
+Construa essa API **sem nenhum teste automatizado** — como um legado real chegaria até você. Não escreva testes nesta fase: eles são o objeto do desafio, não a preparação dele.
+
 ## Contexto
 
-Escolha uma API sua real com pelo menos um endpoint ou módulo de regra de negócio **sem teste automatizado hoje**. Você vai adicionar uma funcionalidade nova pequena a esse endpoint, usando TDD estrito — e, se a mudança tocar o código legado sem teste, proteger esse código antes de mexer nele.
+Com o pré-requisito pronto (endpoint(s) com regra de negócio real, zero cobertura de testes), você vai adicionar uma funcionalidade nova pequena a esse endpoint, usando TDD estrito — e, como a mudança vai tocar código legado sem teste, proteger esse código antes de mexer nele.
 
-Exemplos de funcionalidade nova pequena o suficiente para o escopo (adapte à sua API real): um filtro adicional numa listagem, uma regra de validação de negócio nova, um cálculo derivado a partir de campos já existentes, uma nova condição de autorização.
+Exemplos de funcionalidade nova pequena o suficiente para o escopo: um filtro adicional numa listagem, uma regra de validação de negócio nova, um cálculo derivado a partir de campos já existentes, uma nova condição de autorização.
 
 ## Objetivo
 

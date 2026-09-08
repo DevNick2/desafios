@@ -1,8 +1,8 @@
 # Desafio — Integração Resiliente com Sistema Legado + Cache com Invalidação Ativa
 
 > Nível: **Avançado** (pl↔sr)
-> Aplicado a um caso real de um dos seus próprios repositórios (uma API Python já em produção/desenvolvimento sua — escolha uma que tenha um endpoint de leitura e onde faça sentido introduzir uma dependência externa lenta).
-> Execução sem IA — apenas autocomplete padrão do editor.
+> Desafio autônomo — o pré-requisito abaixo é construído por você dentro desta pasta, sem depender de nenhum outro repositório seu.
+> Execução sem IA — apenas autocomplete padrão do editor. Isso inclui a construção do pré-requisito, não só o desafio em si.
 
 ---
 
@@ -10,9 +10,18 @@
 
 Gap identificado num processo seletivo real (detalhes da empresa omitidos de propósito): você sabe **explicar** circuit breaker, anti-corruption layer e proteção contra cache stampede — já aplicou o padrão Strangler Fig e circuit breaker numa migração real —, mas não há nos seus repositórios nenhuma **implementação hands-on** de integração com um sistema externo lento/instável nem de cache com invalidação ativa (hoje o que existe é conhecimento aplicado uma vez em produção, não um caso de estudo reproduzível e testável). Este desafio fecha essa lacuna combinando os dois problemas num cenário só, porque na prática eles aparecem juntos: proteger um consumidor de uma dependência lenta é exatamente o motivo mais comum para introduzir cache.
 
+## Pré-requisito
+
+Construa, dentro desta pasta, uma API Python simples e independente (ex. FastAPI) com:
+
+- Pelo menos 2 endpoints reais (não "hello world") sobre um recurso com regra de negócio genuína — ex: um catálogo de produtos com cálculo de preço final considerando desconto e imposto, ou pedidos com transições de status válidas/inválidas.
+- Persistência simples (SQLite ou in-memory já resolve — não precisa de infraestrutura pesada).
+
+Essa API é construída do zero para este desafio, não é reaproveitamento de nenhum outro projeto seu — é o que torna o desafio independente e reproduzível por qualquer pessoa que o leia depois.
+
 ## Contexto
 
-Você tem uma API Python já existente (escolha uma sua, ex. `api-monettra` ou outra API real que já tenha um endpoint de leitura). Essa API precisa expor um endpoint que depende de um **sistema legado externo simulado**: lento (latência alta, ~3-5s) e instável (falha uma fração perceptível das chamadas). O endpoint é consultado com alta frequência, e os dados do legado mudam pouco (ex.: a cada 15 minutos).
+A API do pré-requisito precisa expor um endpoint que depende de um **sistema legado externo simulado**: lento (latência alta, ~3-5s) e instável (falha uma fração perceptível das chamadas). O endpoint é consultado com alta frequência, e os dados do legado mudam pouco (ex.: a cada 15 minutos).
 
 Você **não vai integrar com um SOAP real** — vai simular o comportamento do legado localmente (um serviço fake com `sleep` proposital e falha aleatória configurável, rodando em processo separado ou como stub HTTP), para poder testar os cenários de falha de forma controlada e repetível.
 
