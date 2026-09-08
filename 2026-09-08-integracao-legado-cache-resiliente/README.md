@@ -12,22 +12,22 @@ Gap identificado num processo seletivo real (detalhes da empresa omitidos de pro
 
 ## Pré-requisito
 
-Construa, dentro desta pasta, uma API Python simples e independente (ex. FastAPI) que expõe um **catálogo de produtos** com a seguinte regra de negócio (implemente exatamente esta, não uma variação livre):
+Construa, dentro desta pasta, uma API Python simples e independente (ex. FastAPI, mas todo identificador de código em inglês) que expõe um **catálogo de produtos** com a seguinte regra de negócio (implemente exatamente esta, não uma variação livre):
 
-> **Preço final** = `preço_base × (1 − desconto_por_estoque) × (1 + imposto_categoria)`
+> **Preço final** = `base_price × (1 − stock_discount) × (1 + category_tax)`
 >
-> - `imposto_categoria`: Eletrônicos 12%, Livros 4%, Alimentos 7%, Vestuário 8%.
-> - `desconto_por_estoque`: 10% se estoque disponível > 500 unidades, 5% se > 100, 0% caso contrário. **O estoque disponível vem do sistema legado** (seção Contexto abaixo) — é o dado que amarra este pré-requisito ao resto do desafio.
+> - `category_tax`: `ELECTRONICS` 12%, `BOOKS` 4%, `FOOD` 7%, `CLOTHING` 8%.
+> - `stock_discount`: 10% se estoque disponível > 500 unidades, 5% se > 100, 0% caso contrário. **O estoque disponível vem do sistema legado** (seção Contexto abaixo) — é o dado que amarra este pré-requisito ao resto do desafio.
 
-Endpoints mínimos: `GET /produtos` (lista, com preço final calculado) e `GET /produtos/{id}` (detalhe).
+Endpoints mínimos: `GET /products` (lista, com preço final calculado) e `GET /products/{id}` (detalhe).
 
-**Dataset:** 20 produtos, com estes campos: `id`, `nome`, `categoria` (uma das 4 acima, pelo menos 4 produtos por categoria), `preco_base` (entre R$10 e R$2000). Inclua propositalmente: 1 produto com estoque zerado no legado (desconto 0%, testa o caminho de indisponibilidade), 1 produto só encontrado no catálogo mas ausente no legado (testa dado faltante), e ao menos 1 produto por faixa de desconto (>500, entre 100-500, <100).
+**Dataset:** 20 produtos, com estes campos (em inglês): `id`, `name`, `category` (uma das 4 acima, pelo menos 4 produtos por categoria), `base_price` (entre R$10 e R$2000). Inclua propositalmente: 1 produto com estoque zerado no legado (desconto 0%, testa o caminho de indisponibilidade), 1 produto só encontrado no catálogo mas ausente no legado (testa dado faltante), e ao menos 1 produto por faixa de desconto (>500, entre 100-500, <100).
 
 Essa API é construída do zero para este desafio, não é reaproveitamento de nenhum outro projeto seu — é o que torna o desafio independente e reproduzível por qualquer pessoa que o leia depois.
 
 ## Contexto
 
-O endpoint `GET /produtos` depende de um **sistema legado externo simulado** que fornece o estoque disponível de cada produto: lento (latência alta, ~3-5s) e instável (falha uma fração perceptível das chamadas). O endpoint é consultado com alta frequência, e o estoque do legado muda pouco (ex.: a cada 15 minutos).
+O endpoint `GET /products` depende de um **sistema legado externo simulado** que fornece o estoque disponível de cada produto: lento (latência alta, ~3-5s) e instável (falha uma fração perceptível das chamadas). O endpoint é consultado com alta frequência, e o estoque do legado muda pouco (ex.: a cada 15 minutos).
 
 Você **não vai integrar com um SOAP real** — vai simular o comportamento do legado localmente (um serviço fake com `sleep` proposital e falha aleatória configurável, rodando em processo separado ou como stub HTTP), para poder testar os cenários de falha de forma controlada e repetível.
 

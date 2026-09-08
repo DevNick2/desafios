@@ -12,24 +12,24 @@ Gap detectado de forma independente em dois processos seletivos recentes (detalh
 
 ## Pré-requisito
 
-Construa, dentro desta pasta, uma pequena API (a linguagem/framework é sua escolha) com um endpoint `POST /frete/calcular` que implementa exatamente esta regra de cálculo de frete:
+Construa, dentro desta pasta, uma pequena API (a linguagem/framework é sua escolha, mas todo identificador de código em inglês) com um endpoint `POST /shipping/calculate` que implementa exatamente esta regra de cálculo de frete:
 
-> - Peso ≤ 1kg: R$12 fixo — R$18 se a região for Norte.
-> - Peso entre 1kg e 5kg: R$12 + R$3 por kg excedente; **frete grátis** se o valor do pedido > R$300, exceto para as regiões Norte e Nordeste (nessas, o desconto não se aplica).
-> - Peso > 5kg: retorna erro 422 com corpo `{"erro": "FRETE_MANUAL"}` (fora do escopo automatizado).
+> - Peso ≤ 1kg: R$12 fixo — R$18 se a região for `NORTH`.
+> - Peso entre 1kg e 5kg: R$12 + R$3 por kg excedente; **frete grátis** se o valor do pedido > R$300, exceto para as regiões `NORTH` e `NORTHEAST` (nessas, o desconto não se aplica).
+> - Peso > 5kg: retorna erro 422 com corpo `{"error": "MANUAL_QUOTE"}` (fora do escopo automatizado).
 > - CEP inválido ou fora do Brasil: erro 400.
 
-Entrada: `peso_kg`, `cep`, `valor_pedido`. A região (Norte, Nordeste, Centro-Oeste, Sudeste, Sul) é derivada do prefixo do CEP — defina você mesmo o mapeamento de faixas de CEP por região (existe tabela pública de faixas por UF/região; qualquer mapeamento plausível serve).
+Entrada (campos em inglês): `weight_kg`, `zip_code`, `order_value`. A região (`NORTH`, `NORTHEAST`, `MIDWEST`, `SOUTHEAST`, `SOUTH`) é derivada do prefixo do CEP — defina você mesmo o mapeamento de faixas de CEP por região (existe tabela pública de faixas por UF/região; qualquer mapeamento plausível serve).
 
 Construa essa API **sem nenhum teste automatizado** — como um legado real chegaria até você. Não escreva testes nesta fase: eles são o objeto do desafio, não a preparação dele.
 
-**Dataset:** ao subir a API, semeie (fixture/seed, não precisa ser dinâmico) 15 pedidos de exemplo cobrindo: um pedido de cada região, um pedido exatamente em 1kg e outro exatamente em 5kg (limites de faixa), um pedido de 1-5kg com valor > R$300 em região Sudeste (frete grátis) e outro nas mesmas condições em região Norte (sem o desconto), um pedido > 5kg (caminho de erro manual) e um CEP inválido (caminho de erro 400).
+**Dataset:** ao subir a API, semeie (fixture/seed, não precisa ser dinâmico) 15 pedidos de exemplo cobrindo: um pedido de cada região, um pedido exatamente em 1kg e outro exatamente em 5kg (limites de faixa), um pedido de 1-5kg com valor > R$300 em região `SOUTHEAST` (frete grátis) e outro nas mesmas condições em região `NORTH` (sem o desconto), um pedido > 5kg (caminho de erro manual) e um CEP inválido (caminho de erro 400).
 
 ## Contexto
 
 Com o pré-requisito pronto (endpoint de frete com regra real, zero cobertura de testes), você vai adicionar a seguinte funcionalidade nova, usando TDD estrito — e, como ela toca o código legado sem teste, proteger esse código antes de mexer nele:
 
-> **Nova faixa: pedidos entre 5kg e 10kg** deixam de cair no erro `FRETE_MANUAL` e passam a ser calculados como R$45 fixo + 2% do valor do pedido como seguro — **exceto** na região Norte, que continua caindo em cotação manual (`FRETE_MANUAL`).
+> **Nova faixa: pedidos entre 5kg e 10kg** deixam de cair no erro `MANUAL_QUOTE` e passam a ser calculados como R$45 fixo + 2% do valor do pedido como seguro — **exceto** na região `NORTH`, que continua caindo em cotação manual (`MANUAL_QUOTE`).
 
 ## Objetivo
 
