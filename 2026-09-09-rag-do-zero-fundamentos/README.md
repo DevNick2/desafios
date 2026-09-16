@@ -25,6 +25,15 @@ Escreva, dentro desta pasta, um pequeno corpus de **6 documentos de texto** (`.m
 
 Escreva também um **dataset de validação**: 8 perguntas em inglês nos campos de código (`question`, `expected_source_doc`) — cada pergunta deve ter uma resposta clara em exatamente um dos 6 documentos. Ex: `{"question": "How many vacation days does an employee get per year?", "expected_source_doc": "ferias.md"}`.
 
+## Ambiente de execução
+
+| Dependência | Como roda |
+|---|---|
+| Embeddings | `sentence-transformers` local ou modelo de embedding no **Ollama** (API paga como alternativa opcional) |
+| LLM para gerar a resposta | **Ollama** com um modelo pequeno (ex.: 3–8B) — sem GPU roda devagar, mas roda |
+| Índice | Em memória ou arquivo local, construído por você (é parte do exercício) |
+| Conta / custo | Nenhum |
+
 ## Objetivo
 
 Construir, do zero (sem framework de RAG), um pipeline completo: ingestão → chunking → embeddings → indexação → busca → geração de resposta final com um LLM.

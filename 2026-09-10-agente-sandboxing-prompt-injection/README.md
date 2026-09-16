@@ -20,6 +20,14 @@ Construa, dentro desta pasta, um **agente de análise de pedidos**: recebe uma p
 
 O agente deve responder perguntas analíticas legítimas como "qual o valor total de pedidos `COMPLETED` em outubro de 2026?" ou "quantos pedidos de `electronics` foram `CANCELLED`?" gerando o código pandas correspondente — não com lógica hardcoded pergunta por pergunta.
 
+## Ambiente de execução
+
+| Dependência | Como roda |
+|---|---|
+| LLM que gera o código pandas | **Ollama** com um modelo pequeno de código (ex.: 7B); API paga como alternativa opcional |
+| Sandbox de execução | Container local (Docker) configurado por você — é parte do exercício |
+| Conta / custo | Nenhum. Se usar API paga, a chave nunca pode ficar acessível ao código gerado (requisito do desafio) |
+
 ## Objetivo
 
 Proteger o agente construído no pré-requisito contra dois riscos reais: execução insegura do código que ele mesmo gera, e sequestro de comportamento via prompt injection (direto, pelo usuário, e indireto, pelos dados).

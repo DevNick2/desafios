@@ -48,6 +48,18 @@ Endpoints mínimos: `POST /bookings/quote` (recebe itens + `installments`, devol
 
 Essa API é construída do zero para este desafio, não é reaproveitamento de nenhum outro projeto seu. É ela que o desafio transforma em serviço orientado a eventos.
 
+## Ambiente de execução
+
+Tudo roda com `docker compose`, sem conta em nenhuma nuvem:
+
+| Dependência | Como roda |
+|---|---|
+| Kafka | Container oficial do Kafka (modo KRaft) ou **Redpanda**, que é compatível com a API do Kafka e mais leve |
+| Event store | PostgreSQL em container |
+| Read model | MongoDB em container |
+| Fornecedor de inventário e gateway de pagamento | **Fakes de apoio** com falha, latência e modo "timeout que executou" configuráveis |
+| Conta / custo | Nenhum |
+
 ## Contexto
 
 A cotação vira uma **fatura real** quando a reserva é confirmada. Confirmar uma reserva é uma operação distribuída em três passos, cada um num "serviço" diferente:
