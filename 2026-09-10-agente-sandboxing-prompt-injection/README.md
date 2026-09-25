@@ -8,7 +8,7 @@
 
 ## Motivação
 
-Gap exposto numa pergunta real de arquitetura de agente de IA em produção (detalhes da empresa omitidos de propósito): você sabe explicar em alto nível "isolar execução de código gerado por LLM" e "prevenir prompt injection", mas nunca implementou nenhum dos dois na prática. São duas preocupações que aparecem juntas em qualquer agente que executa código dinamicamente — e é exatamente esse par que este desafio força.
+Você sabe explicar em alto nível "isolar execução de código gerado por LLM" e "prevenir prompt injection", mas nunca implementou nenhum dos dois na prática. São duas preocupações que aparecem juntas em qualquer agente que executa código dinamicamente — e é exatamente esse par que este desafio força.
 
 ## Pré-requisito
 

@@ -9,7 +9,7 @@
 
 ## Motivação
 
-Go apareceu como requisito em duas vagas reais de liderança técnica (detalhes das empresas omitidos de propósito), e o conhecimento hoje é zero. Como já existem 10+ anos de backend em Python e Node, o que falta **não** é lógica de programação: é o jeito de Go fazer as mesmas coisas — erro como valor em vez de exceção, interfaces implícitas, ponteiros explícitos, e uma biblioteca padrão que dispensa framework.
+Go é presença crescente em backends e ferramentas de infraestrutura, e o conhecimento hoje é zero. Como já existem 10+ anos de backend em Python e Node, o que falta **não** é lógica de programação: é o jeito de Go fazer as mesmas coisas — erro como valor em vez de exceção, interfaces implícitas, ponteiros explícitos, e uma biblioteca padrão que dispensa framework.
 
 Esta fase cobre a linguagem. A concorrência, que é onde Go realmente se diferencia, fica para a Fase 2.
 

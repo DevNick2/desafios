@@ -6,11 +6,9 @@
 
 ## Motivação
 
-Vagas de Tech Lead pedem "monitoramento", "observabilidade" e "confiabilidade" com frequência, mas quase sempre como uma linha solta no meio dos requisitos — o que esconde que isso é uma disciplina com decisões de arquitetura próprias, não um checkbox de instalar agente. Nos seus desafios anteriores, observabilidade apareceu sempre como sub-requisito ("log estruturado e contadores"), nunca como o problema central.
+"Monitoramento", "observabilidade" e "confiabilidade" costumam aparecer como uma linha solta no meio de uma lista de requisitos — o que esconde que isso é uma disciplina com decisões de arquitetura próprias, não um checkbox de instalar agente. Nos seus desafios anteriores, observabilidade apareceu sempre como sub-requisito ("log estruturado e contadores"), nunca como o problema central.
 
 Este desafio inverte isso: a API já funciona, e **todo o trabalho é torná-la operável**. O que se aprende aqui não é "usar Prometheus" — é decidir o que medir, o que **não** medir, e como provar que o sistema está saudável sem afogar quem está de plantão.
-
-(Detalhes da empresa de origem omitidos de propósito.)
 
 ---
 

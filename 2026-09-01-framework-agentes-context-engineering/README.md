@@ -4,19 +4,19 @@
 
 ## Motivação
 
-Baseado em uma vaga real de Especialista em Engenharia de IA Agêntica (detalhes da empresa omitidos de propósito, para permitir compartilhar este desafio publicamente). A vaga exige experiência com frameworks de agentes nomeados (LangGraph, CrewAI, AutoGen, Claude SDK) e conhecimento avançado em "Context Engineering" e "Harness Engineering" — dois gaps reais e específicos: você tem domínio profundo do *padrão* de orquestração multiagente (via Agno, em produção), mas nunca usou esses frameworks especificamente nomeados nem formalizou sua prática de gestão de contexto sob esses termos.
+Engenharia de IA agêntica tem hoje um punhado de frameworks de agentes consolidados (LangGraph, CrewAI, AutoGen, Claude SDK) e duas disciplinas que ganharam nome próprio: "Context Engineering" e "Harness Engineering". São dois gaps reais e específicos: você tem domínio profundo do *padrão* de orquestração multiagente (via Agno, em produção), mas nunca usou esses frameworks especificamente nomeados nem formalizou sua prática de gestão de contexto sob esses termos.
 
 ## Contexto
 
-Você está montando uma proposta de arquitetura para uma plataforma de agentes de IA voltada à aceleração do ciclo de desenvolvimento e testes de software (o mesmo escopo da vaga real). A plataforma precisa: orquestrar múltiplos agentes especializados, manter sessões de contexto de longa duração sem estourar a janela do modelo, e expor ferramentas via protocolo MCP para os agentes consumirem.
+Você está montando uma proposta de arquitetura para uma plataforma de agentes de IA voltada à aceleração do ciclo de desenvolvimento e testes de software. A plataforma precisa: orquestrar múltiplos agentes especializados, manter sessões de contexto de longa duração sem estourar a janela do modelo, e expor ferramentas via protocolo MCP para os agentes consumirem.
 
-Você não vai escrever código neste desafio — o entregável é um **documento de decisão de arquitetura**, pronto para ser defendido numa entrevista técnica.
+Você não vai escrever código neste desafio — o entregável é um **documento de decisão de arquitetura**, pronto para ser defendido numa revisão técnica.
 
 ## Objetivo
 
 Produzir um documento (Markdown) que cubra:
 
-1. **Comparação de frameworks** — Agno (o que você já usa) vs. pelo menos **dois** dos frameworks citados na vaga (LangGraph, CrewAI, AutoGen, Claude SDK). Pesquise a documentação oficial de cada um antes de responder — não é para adivinhar ou generalizar. Compare em pelo menos 3 eixos concretos: por exemplo, modelo de orquestração (grafo de estados vs. papéis vs. handoffs), como cada um trata memória/contexto nativamente, e maturidade de integração com MCP.
+1. **Comparação de frameworks** — Agno (o que você já usa) vs. pelo menos **dois** destes frameworks (LangGraph, CrewAI, AutoGen, Claude SDK). Pesquise a documentação oficial de cada um antes de responder — não é para adivinhar ou generalizar. Compare em pelo menos 3 eixos concretos: por exemplo, modelo de orquestração (grafo de estados vs. papéis vs. handoffs), como cada um trata memória/contexto nativamente, e maturidade de integração com MCP.
 2. **Decisão e justificativa** — qual framework você escolheria para este cenário específico, e por quê — considerando não só capacidade técnica, mas curva de adoção pro time e pra você mesmo.
 3. **Estratégia de Context Engineering** — como você manteria uma sessão de longa duração sem estourar a janela de contexto do modelo? Nomeie técnicas concretas (ex.: sumarização incremental, memória externa/RAG, truncamento seletivo, hierarquia de contexto) e em que momento cada uma entra.
 4. **Harness de orquestração, rastreabilidade e governança** — como você desenharia o "harness" que envolve os agentes: logging estruturado por decisão do agente, como você audita "por que o agente fez X", como você limita ações destrutivas de um agente autônomo.
@@ -30,7 +30,7 @@ Produzir um documento (Markdown) que cubra:
 
 ## Critérios de aceite
 
-- [ ] Pelo menos 2 frameworks nomeados pela vaga foram pesquisados e comparados com Agno em pelo menos 3 eixos concretos.
+- [ ] Pelo menos 2 dos frameworks listados foram pesquisados e comparados com Agno em pelo menos 3 eixos concretos.
 - [ ] A decisão de framework tem justificativa que vai além de "é mais popular" — trade-offs reais e específicos ao cenário.
 - [ ] A estratégia de Context Engineering nomeia técnicas concretas com critério explícito de quando usar cada uma.
 - [ ] O harness de governança define pelo menos um mecanismo concreto de auditoria/rastreabilidade e um de limite de ação autônoma.

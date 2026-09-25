@@ -2,35 +2,35 @@
 
 **Nível:** Especialista (staff/principal/Tech Lead)
 
-**Pré-requisito (Fase 1):** [desafios/2026-09-01-fundamentos-docker-k8s-eventos](../2026-09-01-fundamentos-docker-k8s-eventos/README.md) — conclua antes de começar esta. Você ainda não tem experiência prática com Kubernetes; a Fase 1 constrói essa base (container, cluster local, objetos básicos, scaling manual) antes deste desenho de nível sênior/entrevista.
+**Pré-requisito (Fase 1):** [desafios/2026-09-01-fundamentos-docker-k8s-eventos](../2026-09-01-fundamentos-docker-k8s-eventos/README.md) — conclua antes de começar esta. Você ainda não tem experiência prática com Kubernetes; a Fase 1 constrói essa base (container, cluster local, objetos básicos, scaling manual) antes deste desenho de nível sênior.
 
 ## Motivação
 
-Baseado em uma vaga real e ativa (Tech Lead Node.js/React; detalhes da empresa omitidos de propósito, para permitir compartilhar este desafio publicamente). As perguntas técnicas prováveis da entrevista cruzam dois eixos:
+Operar um sistema orientado a eventos em produção cruza dois eixos que costumam ser tratados separadamente:
 
 1. **Kubernetes** — "Já operou Kubernetes em produção? Descreva um cenário de troubleshooting de scaling ou de uma falha de deploy." Este é um **gap real e não documentado** no seu histórico técnico até aqui, ao contrário de arquitetura orientada a eventos (que você já tem — ver ponto 2).
 2. **Arquitetura orientada a eventos (SQS/SNS)** — aqui você já tem evidência real e forte (a migração do monólito para um serviço event-driven em Python publicando em SNS, com padrão Strangler Fig). O desafio não é aprender o conceito, é **integrar** essa experiência com a operação em Kubernetes — que é exatamente o tipo de pergunta de Tech Lead sênior ("como esses serviços rodariam em produção, escalando, sob falha?").
 
 ## Contexto
 
-Você está na entrevista técnica final para essa vaga. O entrevistador pega o case real que você já descreveu (o serviço event-driven que consome de um tópico SNS, com um proxy Strangler Fig na frente) e pergunta: "beleza, isso já roda em produção — mas como você desenharia a operação disso em Kubernetes, e o que você faria se esse serviço começasse a falhar sob carga às 9h da manhã (exatamente o horário da rotina agendada que você mencionou)?"
+Numa revisão de arquitetura, alguém pega o case real que você já descreveu (o serviço event-driven que consome de um tópico SNS, com um proxy Strangler Fig na frente) e pergunta: "beleza, isso já roda em produção — mas como você desenharia a operação disso em Kubernetes, e o que você faria se esse serviço começasse a falhar sob carga às 9h da manhã (exatamente o horário da rotina agendada que você mencionou)?"
 
-Você não vai escrever YAML de produção nem código neste desafio — o entregável é um **documento de decisão técnica**, pronto para ser defendido em voz alta numa entrevista.
+Você não vai escrever YAML de produção nem código neste desafio — o entregável é um **documento de decisão técnica**, pronto para ser defendido em voz alta numa revisão técnica.
 
 ## Objetivo
 
 Produzir um documento (Markdown) que cubra:
 
 1. **Desenho do workload em Kubernetes** — como o serviço consumidor (o que processa a fila/tópico SNS→SQS) seria deployado: Deployment vs. Job/CronJob, estratégia de scaling (HPA baseado em quê — CPU não faz sentido para um consumidor de fila; qual métrica você usaria?), e por que essa escolha.
-2. **Cenário de troubleshooting de scaling** — a pergunta literal da entrevista. Descreva um cenário concreto de falha (ex.: fila SQS acumulando, pods não escalando, ou escalando mas travando) e o passo a passo de diagnóstico: o que você olha primeiro, que métricas/logs, que hipóteses descarta e em que ordem.
-3. **Boas práticas de segurança em imagem Docker multi-stage** — a segunda pergunta literal da entrevista. Aplique ao serviço Python do case real: o que entra em cada stage, o que nunca vai pra imagem final, e por quê.
+2. **Cenário de troubleshooting de scaling** — a pergunta central do cenário. Descreva um cenário concreto de falha (ex.: fila SQS acumulando, pods não escalando, ou escalando mas travando) e o passo a passo de diagnóstico: o que você olha primeiro, que métricas/logs, que hipóteses descarta e em que ordem.
+3. **Boas práticas de segurança em imagem Docker multi-stage** — a segunda pergunta do cenário. Aplique ao serviço Python do case real: o que entra em cada stage, o que nunca vai pra imagem final, e por quê.
 4. **Circuit breaker e auto-scaling juntos** — você já mencionou circuit breaker e reforço de auto-scaling/load balancer como mitigação no case real. Neste desenho, explicite como essas duas coisas interagem especificamente em Kubernetes (ex.: um pod que abre circuito não deveria necessariamente ser matado por liveness probe — como você evita essa armadilha?).
-5. **Resposta de entrevista em 30 segundos** — feche com uma versão falada, curta, de como você contaria essa história inteira (do incidente ao redesenho) numa pergunta comportamental tipo "me dê um exemplo de decisão de arquitetura sob pressão".
+5. **Resumo falado em 30 segundos** — feche com uma versão falada, curta, de como você contaria essa história inteira (do incidente ao redesenho) quando alguém perguntar "me dê um exemplo de decisão de arquitetura sob pressão".
 
 ## Requisitos
 
 - Documento escrito (Markdown), não implementação.
-- O cenário de troubleshooting (item 2) precisa ser específico o bastante para ser contado como uma história real numa entrevista — não "eu olharia os logs", mas o quê, onde, em que ordem.
+- O cenário de troubleshooting (item 2) precisa ser específico o bastante para ser contado como uma história real — não "eu olharia os logs", mas o quê, onde, em que ordem.
 - A escolha de métrica de HPA (item 1) precisa vir com o porquê de CPU/memória não servirem para esse tipo de workload.
 - O fechamento (item 5) tem limite real: precisa caber em ~30 segundos falados (regra prática: ~75-90 palavras).
 

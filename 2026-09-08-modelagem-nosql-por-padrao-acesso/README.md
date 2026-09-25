@@ -8,7 +8,7 @@
 
 ## Motivação
 
-Gap detectado de forma independente em três processos seletivos (detalhes das empresas omitidos de propósito): NoSQL (DynamoDB/MongoDB) aparece como requisito ou diferencial, mas seu perfil hoje não tem nenhum caso documentado de modelagem NoSQL — o instinto de modelagem que você pratica (e domina bem) é relacional/normalizado. O erro mais comum de quem migra desse instinto para NoSQL é copiar a estrutura de tabelas relacionais para "coleções"/"tabelas" NoSQL, perdendo o ganho real: em NoSQL você modela **a partir dos padrões de acesso**, não a partir das entidades.
+NoSQL (DynamoDB/MongoDB) é presença constante em backends modernos, mas você hoje não tem nenhum caso documentado de modelagem NoSQL — o instinto de modelagem que você pratica (e domina bem) é relacional/normalizado. O erro mais comum de quem migra desse instinto para NoSQL é copiar a estrutura de tabelas relacionais para "coleções"/"tabelas" NoSQL, perdendo o ganho real: em NoSQL você modela **a partir dos padrões de acesso**, não a partir das entidades.
 
 ## Pré-requisito
 

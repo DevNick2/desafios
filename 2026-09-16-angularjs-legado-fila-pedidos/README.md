@@ -8,9 +8,9 @@
 
 ## Motivação
 
-Gap identificado num processo seletivo real para desenvolvedor fullstack sênior (detalhes da empresa omitidos de propósito): a vaga exige **AngularJS** (a versão 1.x, anterior ao Angular moderno) como requisito obrigatório, num time que mantém um produto SaaS em produção há anos. Seu front-end em produção é Vue.js, e o estudo de Angular que você tem é do Angular moderno, que tem outra arquitetura.
+**AngularJS** (a versão 1.x, anterior ao Angular moderno) ainda sustenta muitos produtos SaaS em produção há anos. Seu front-end em produção é Vue.js, e o estudo de Angular que você tem é do Angular moderno, que tem outra arquitetura.
 
-Empresas que ainda pedem AngularJS raramente querem código novo nele: querem alguém que **entre numa base antiga, entenda o *digest cycle*, corrija bug sem quebrar o resto e evolua a tela com segurança**. É isso que este desafio treina.
+Quem mantém AngularJS raramente quer código novo nele: querem alguém que **entre numa base antiga, entenda o *digest cycle*, corrija bug sem quebrar o resto e evolua a tela com segurança**. É isso que este desafio treina.
 
 ## Pré-requisito
 

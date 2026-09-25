@@ -8,7 +8,7 @@
 
 ## Motivação
 
-Gap detectado de forma independente em dois processos seletivos recentes (detalhes das empresas omitidos de propósito): testes automatizados/TDD aparecem como competência avaliada, mas você não tem hoje nenhum caso documentado de TDD aplicado na prática — tem esteira de CI/CD madura, mas o "como você desenvolve com testes primeiro" ainda é teórico. Este desafio força o ciclo red-green-refactor de verdade, e resolve o problema mais comum de quem tenta adotar TDD num código já existente: **como introduzir testes com segurança em algo que hoje não tem nenhum**, sem parar tudo para escrever suíte completa antes de qualquer mudança.
+Testes automatizados/TDD são competência básica de engenharia sênior, mas você não tem hoje nenhum caso documentado de TDD aplicado na prática — tem esteira de CI/CD madura, mas o "como você desenvolve com testes primeiro" ainda é teórico. Este desafio força o ciclo red-green-refactor de verdade, e resolve o problema mais comum de quem tenta adotar TDD num código já existente: **como introduzir testes com segurança em algo que hoje não tem nenhum**, sem parar tudo para escrever suíte completa antes de qualquer mudança.
 
 ## Pré-requisito
 

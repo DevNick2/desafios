@@ -9,11 +9,11 @@
 
 ## Motivação
 
-Gap identificado em **dois processos seletivos reais** de engenharia de IA (detalhes das empresas omitidos de propósito): os dois citam **Azure AI Foundry** (e um deles também Microsoft Copilot / Copilot Studio) como plataforma de IA corporativa. Você já construiu agentes com RAG e tool calling em produção, mas 100% sobre AWS e APIs diretas de provedores de LLM, com frameworks como Agno e LangChain.
+**Azure AI Foundry** (ao lado de Microsoft Copilot / Copilot Studio) é a plataforma de IA corporativa de muitas empresas que já rodam sobre a Microsoft. Você já construiu agentes com RAG e tool calling em produção, mas 100% sobre AWS e APIs diretas de provedores de LLM, com frameworks como Agno e LangChain.
 
 Há dois aprendizados diferentes aqui, e só um deles depende de conta na nuvem:
 
-1. **O padrão de engenharia**, que é o que uma entrevista técnica testa: roteamento confiável entre recuperação e ferramenta, citação, avaliação automatizada, tracing, guardrails e defesa contra *prompt injection*. Isso a Parte 1 cobre sem custo.
+1. **O padrão de engenharia**, que vale em qualquer nuvem: roteamento confiável entre recuperação e ferramenta, citação, avaliação automatizada, tracing, guardrails e defesa contra *prompt injection*. Isso a Parte 1 cobre sem custo.
 2. **O stack gerenciado da Microsoft** (modelo implantado no Foundry, Azure AI Search, Agent Service, avaliações e tracing nativos). Isso a Parte 2 cobre, quando você tiver a conta.
 
 ## Pré-requisito

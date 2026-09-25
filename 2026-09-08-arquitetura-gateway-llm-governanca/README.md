@@ -8,7 +8,7 @@
 
 ## Motivação
 
-Gap identificado num processo seletivo real (detalhes da empresa omitidos de propósito): um produto SaaS já tem várias funcionalidades de IA em produção (chatbot, transcrição, geração de conteúdo), construídas ao longo do tempo sem padronização entre provedores de LLM, sem processo formal de avaliação de qualidade, e operando sobre dados sensíveis regulados (dados de saúde, sob LGPD). Isso expõe quatro lacunas específicas de "Especialista": desenho de camada de orquestração multi-provider, tratamento de prompt como código com testes de regressão, observabilidade de custo/qualidade em produção, e governança de dados sensíveis num pipeline que passa por LLMs de terceiros.
+Cenário comum em produtos que adotaram IA cedo: um produto SaaS já tem várias funcionalidades de IA em produção (chatbot, transcrição, geração de conteúdo), construídas ao longo do tempo sem padronização entre provedores de LLM, sem processo formal de avaliação de qualidade, e operando sobre dados sensíveis regulados (dados de saúde, sob LGPD). Isso expõe quatro lacunas específicas de "Especialista": desenho de camada de orquestração multi-provider, tratamento de prompt como código com testes de regressão, observabilidade de custo/qualidade em produção, e governança de dados sensíveis num pipeline que passa por LLMs de terceiros.
 
 ## Pré-requisito
 

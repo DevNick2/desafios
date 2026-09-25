@@ -8,7 +8,7 @@
 
 ## Motivação
 
-Gap identificado num processo seletivo real para arquiteto de software (detalhes da empresa omitidos de propósito): a vaga é a construção de uma **plataforma de faturamento do zero** com arquitetura orientada a eventos, pedindo explicitamente **Kafka, Event Sourcing, CQRS e Saga**. Você já tem experiência real com mensageria (SNS/SQS, RabbitMQ) e com Strangler Fig + circuit breaker, mas nenhuma implementação hands-on de:
+Construir uma **plataforma de faturamento do zero** com arquitetura orientada a eventos é o terreno natural de **Kafka, Event Sourcing, CQRS e Saga**. Você já tem experiência real com mensageria (SNS/SQS, RabbitMQ) e com Strangler Fig + circuit breaker, mas nenhuma implementação hands-on de:
 
 - estado derivado de um **log de eventos imutável** (em vez de uma linha atualizada no banco);
 - **projeções** reconstruíveis do zero a partir desse log;
@@ -104,6 +104,6 @@ Implementar o faturamento como **agregado event-sourced** publicado em Kafka, co
 
 ## Para discutir depois (não é requisito)
 
-- Saga orquestrada vs. coreografada: o que mudaria neste fluxo e qual você defenderia numa entrevista?
+- Saga orquestrada vs. coreografada: o que mudaria neste fluxo e qual você defenderia numa revisão de arquitetura?
 - Quando Event Sourcing **não** vale a pena? Aponte pelo menos uma parte desta plataforma em que você não usaria.
 - Snapshots: a partir de quantos eventos por stream você introduziria e como mediria isso?

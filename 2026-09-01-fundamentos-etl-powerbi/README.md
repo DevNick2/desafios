@@ -6,7 +6,7 @@
 
 ## Motivação
 
-Você já tem um desafio Especialista pausado (Fase 2) sobre desenho de arquitetura de migração de ERP com pipeline de ETL — mas você não tem nenhuma experiência prática com ETL nem com Power BI ainda, então esse desafio quebra em duas fases: aqui você constrói a base hands-on (um pipeline ETL de verdade, rodando, e um dashboard real em Power BI); na Fase 2 você desenha a arquitetura de nível sênior/entrevista em cima dessa base.
+Você já tem um desafio Especialista pausado (Fase 2) sobre desenho de arquitetura de migração de ERP com pipeline de ETL — mas você não tem nenhuma experiência prática com ETL nem com Power BI ainda, então esse desafio quebra em duas fases: aqui você constrói a base hands-on (um pipeline ETL de verdade, rodando, e um dashboard real em Power BI); na Fase 2 você desenha a arquitetura de nível sênior em cima dessa base.
 
 Você já domina Python e Postgres — essa fase reaproveita isso: o "T" e o "L" do ETL vão usar ferramentas que você já conhece, o novo aqui é o padrão ETL em si e a ferramenta de BI.
 

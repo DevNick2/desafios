@@ -8,7 +8,7 @@
 
 ## Motivação
 
-Gap identificado num processo seletivo real para desenvolvedor fullstack sênior num time de operação de software para restaurantes (detalhes da empresa omitidos de propósito). A vaga valoriza: integrações de APIs e **webhooks**, **mapeamento DE-PARA**, processamento assíncrono com **SQS** e tolerância a falhas, e **segurança entre sistemas (OAuth)**.
+Software de operação para restaurantes vive de integração com parceiros de delivery: **webhooks**, **mapeamento DE-PARA**, processamento assíncrono com **SQS** e tolerância a falhas, e **segurança entre sistemas (OAuth)**.
 
 Você já tem resiliência em produção (Strangler Fig, circuit breaker, SNS). Faltam evidências hands-on do que torna integração com parceiro difícil no dia a dia:
 

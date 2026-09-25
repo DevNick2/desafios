@@ -9,7 +9,7 @@
 
 ## Motivação
 
-Gap exposto numa etapa de arquitetura de processo seletivo real (detalhes da empresa omitidos de propósito): desenhar um painel executivo consolidando várias origens, quase em tempo real. O desenho ficou sólido no papel — SSE em vez de WebSocket, publicação pós-commit, polling com marca d'água, idempotência no consumo — mas nada disso foi implementado.
+Um painel executivo que consolida várias origens quase em tempo real parece simples no papel. O desenho já existe — SSE em vez de WebSocket, publicação pós-commit, polling com marca d'água, idempotência no consumo — mas nada disso foi implementado.
 
 São quatro mecanismos que só se aprendem de verdade quebrando:
 

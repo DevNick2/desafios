@@ -7,11 +7,9 @@
 
 ## Motivação
 
-O mercado de engenharia de IA deslocou a régua: não basta consumir um agente pronto, o pedido agora é **construir a camada de ferramentas e a governança do que o agente pode fazer**. Nas vagas recentes esse recorte aparece nomeado — expor sistemas internos como ferramentas de agente via MCP (criando o server, não só integrando com um existente), decidir escopo de permissão por ferramenta, tratar erro por ferramenta, autorizar ação em nome de um usuário e auditar a cadeia inteira. Em paralelo, **LangGraph** aparece como requisito recorrente para orquestração com estado — um padrão que você já domina por outro framework, mas nunca exercitou nesse.
+O mercado de engenharia de IA deslocou a régua: não basta consumir um agente pronto, o pedido agora é **construir a camada de ferramentas e a governança do que o agente pode fazer**. Esse recorte tem partes bem definidas — expor sistemas internos como ferramentas de agente via MCP (criando o server, não só integrando com um existente), decidir escopo de permissão por ferramenta, tratar erro por ferramenta, autorizar ação em nome de um usuário e auditar a cadeia inteira. Em paralelo, **LangGraph** se firmou como referência para orquestração com estado — um padrão que você já domina por outro framework, mas nunca exercitou nesse.
 
 Este desafio junta as duas coisas do jeito que elas aparecem juntas na prática: um MCP Server que leva a sério permissão e auditoria, e um agente com estado que o consome e sabe parar para pedir autorização humana.
-
-*Detalhes das empresas omitidos de propósito.*
 
 ---
 

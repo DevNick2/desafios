@@ -8,7 +8,7 @@
 
 ## Motivação
 
-Gap identificado num processo seletivo real (detalhes da empresa omitidos de propósito): você sabe **explicar** circuit breaker, anti-corruption layer e proteção contra cache stampede — já aplicou o padrão Strangler Fig e circuit breaker numa migração real —, mas não há nos seus repositórios nenhuma **implementação hands-on** de integração com um sistema externo lento/instável nem de cache com invalidação ativa (hoje o que existe é conhecimento aplicado uma vez em produção, não um caso de estudo reproduzível e testável). Este desafio fecha essa lacuna combinando os dois problemas num cenário só, porque na prática eles aparecem juntos: proteger um consumidor de uma dependência lenta é exatamente o motivo mais comum para introduzir cache.
+Você sabe **explicar** circuit breaker, anti-corruption layer e proteção contra cache stampede — já aplicou o padrão Strangler Fig e circuit breaker numa migração real —, mas não há nos seus repositórios nenhuma **implementação hands-on** de integração com um sistema externo lento/instável nem de cache com invalidação ativa (hoje o que existe é conhecimento aplicado uma vez em produção, não um caso de estudo reproduzível e testável). Este desafio fecha essa lacuna combinando os dois problemas num cenário só, porque na prática eles aparecem juntos: proteger um consumidor de uma dependência lenta é exatamente o motivo mais comum para introduzir cache.
 
 ## Pré-requisito
 

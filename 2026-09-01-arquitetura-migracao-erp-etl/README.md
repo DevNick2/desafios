@@ -2,15 +2,15 @@
 
 **Nível:** Especialista (staff/principal/Tech Lead)
 
-**Pré-requisito (Fase 1):** [desafios/2026-09-01-fundamentos-etl-powerbi](../2026-09-01-fundamentos-etl-powerbi/README.md) — conclua antes de retomar esta. Você ainda não tem experiência prática com ETL nem Power BI; a Fase 1 constrói essa base (pipeline ETL real, dashboard em Power BI) antes deste desenho de nível sênior/entrevista.
+**Pré-requisito (Fase 1):** [desafios/2026-09-01-fundamentos-etl-powerbi](../2026-09-01-fundamentos-etl-powerbi/README.md) — conclua antes de retomar esta. Você ainda não tem experiência prática com ETL nem Power BI; a Fase 1 constrói essa base (pipeline ETL real, dashboard em Power BI) antes deste desenho de nível sênior.
 
 ## Motivação
 
-Baseado em uma vaga real de Tech Lead Python (detalhes da empresa e do processo seletivo omitidos de propósito, para que este desafio possa ser compartilhado publicamente). A vaga pede explicitamente: liderar "migração entre ERPs", processos de ETL, "garantir qualidade dos dados desde a origem", e conhecimento intermediário/avançado em Excel/BI. Nenhum desses três pontos (ETL, ferramentas de BI, migração de sistemas legados de dados) tem evidência documentada no seu perfil atual (`perfil_profissional/diagnostico_perfil.md`) — é um gap real, não hipotético, e a call já está marcada.
+Trocar de ERP é um dos projetos mais arriscados que um time técnico pode liderar: envolve migrar dados legados, montar processos de ETL, "garantir qualidade dos dados desde a origem" e manter relatórios de BI confiáveis durante a transição. Nenhum desses três pontos (ETL, ferramentas de BI, migração de sistemas legados de dados) tem hoje um caso prático seu — é um gap real, não hipotético.
 
 ## Contexto
 
-Você é o Tech Lead recém-contratado (papel hipotético, mas o cenário é deliberadamente próximo do que a vaga descreve). A empresa vai trocar de ERP nos próximos 9 meses. O ERP atual alimenta faturamento, estoque e relatórios financeiros usados pela diretoria em planilhas Excel manuais. Ninguém confia 100% nos números hoje — já houve casos de estoque divergente entre o sistema e a contagem física, e a diretoria quer que o novo ERP "resolva isso de uma vez".
+Você é o Tech Lead recém-contratado (papel hipotético). A empresa vai trocar de ERP nos próximos 9 meses. O ERP atual alimenta faturamento, estoque e relatórios financeiros usados pela diretoria em planilhas Excel manuais. Ninguém confia 100% nos números hoje — já houve casos de estoque divergente entre o sistema e a contagem física, e a diretoria quer que o novo ERP "resolva isso de uma vez".
 
 Você não vai escrever código de produção neste desafio — o entregável é uma **decisão de arquitetura documentada**, como se fosse levar essa proposta para o board e para o time.
 
@@ -34,7 +34,7 @@ Produzir um documento de decisão de arquitetura (ADR ou formato equivalente, su
 - [ ] A estratégia de migração está justificada por risco, não só por preferência técnica.
 - [ ] O desenho do pipeline de ETL nomeia explicitamente onde e como a validação de dados acontece.
 - [ ] A decisão de build vs. buy tem pelo menos dois trade-offs concretos (não genéricos) a favor e contra.
-- [ ] Existe uma explicação de risco em linguagem de negócio, sem jargão técnico, pronta para ser dita em voz alta numa call.
+- [ ] Existe uma explicação de risco em linguagem de negócio, sem jargão técnico, pronta para ser dita em voz alta numa reunião com a diretoria.
 
 ## Execução
 

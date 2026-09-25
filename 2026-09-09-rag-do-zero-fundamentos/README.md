@@ -8,7 +8,7 @@
 
 ## Motivação
 
-Gap confirmado em 2026-09-09, prioridade alta: você já usa recuperação de contexto em produção no Orchestra, mas via abstração do framework Agno — nunca tomou pessoalmente as decisões de arquitetura de um pipeline de RAG (tamanho de chunk, estratégia de indexação, forma de busca). Isso apareceu como gap real em pelo menos 3 processos seletivos ativos, incluindo a primeira pergunta de uma etapa de entrevista por IA. Este desafio existe para você conseguir responder essa pergunta com uma experiência de verdade, não emprestada de um framework.
+Você já usa recuperação de contexto em produção no Orchestra, mas via abstração do framework Agno — nunca tomou pessoalmente as decisões de arquitetura de um pipeline de RAG (tamanho de chunk, estratégia de indexação, forma de busca). Este desafio existe para você conseguir explicar cada uma dessas decisões com uma experiência de verdade, não emprestada de um framework.
 
 ## Pré-requisito
 
@@ -47,12 +47,12 @@ Construir, do zero (sem framework de RAG), um pipeline completo: ingestão → c
 5. **Busca** — dada uma query, gere o embedding dela e recupere os top-k chunks mais similares (defina k e justifique).
 6. **Geração** — passe os chunks recuperados + a pergunta para um LLM e gere a resposta final.
 7. **Avaliação contra o dataset de validação** — rode as 8 perguntas do pré-requisito e meça: para cada uma, o chunk recuperado em top-1 (ou top-3) veio do `expected_source_doc` correto? Reporte a métrica (ex: 6/8 = 75%).
-8. **Iteração documentada** — depois da primeira rodada de avaliação, ajuste pelo menos um parâmetro (chunk_size, k, ou estratégia de chunking) para tentar melhorar o resultado, e registre: o que mudou, e o resultado antes/depois. Isso é o "o que não funcionou de primeira e o que você mudou" que toda entrevista real pergunta.
+8. **Iteração documentada** — depois da primeira rodada de avaliação, ajuste pelo menos um parâmetro (chunk_size, k, ou estratégia de chunking) para tentar melhorar o resultado, e registre: o que mudou, e o resultado antes/depois. Isso é o "o que não funcionou de primeira e o que você mudou", que é onde o aprendizado real aparece.
 
 ## Critérios de aceite
 
 - Pipeline roda ponta a ponta com um único comando, da pergunta em texto até a resposta final gerada pelo LLM.
 - A métrica de avaliação contra as 8 perguntas do dataset de validação está calculada e reportada, não estimada de cabeça.
 - Existe pelo menos uma iteração real documentada (parâmetro mudado + resultado antes/depois), não só a primeira tentativa.
-- Documento final (README próprio desta implementação, dentro desta pasta) responde, com números e decisões reais do seu próprio pipeline, as mesmas 4 perguntas que caem em entrevista: como foi a ingestão, qual estratégia de chunking e por quê, como foi a indexação, como funciona busca+recuperação até a resposta final — e o que não funcionou de primeira.
+- Documento final (README próprio desta implementação, dentro desta pasta) responde, com números e decisões reais do seu próprio pipeline, as 4 perguntas centrais de qualquer pipeline de RAG: como foi a ingestão, qual estratégia de chunking e por quê, como foi a indexação, como funciona busca+recuperação até a resposta final — e o que não funcionou de primeira.
 - Nenhum framework de RAG (LangChain, LlamaIndex, Agno) foi usado — só chamadas diretas a API de embeddings/LLM e sua própria lógica de chunking/busca.
