@@ -8,7 +8,7 @@
 
 ## Motivação
 
-NoSQL (DynamoDB/MongoDB) é presença constante em backends modernos, mas você hoje não tem nenhum caso documentado de modelagem NoSQL — o instinto de modelagem que você pratica (e domina bem) é relacional/normalizado. O erro mais comum de quem migra desse instinto para NoSQL é copiar a estrutura de tabelas relacionais para "coleções"/"tabelas" NoSQL, perdendo o ganho real: em NoSQL você modela **a partir dos padrões de acesso**, não a partir das entidades.
+NoSQL (DynamoDB/MongoDB) é presença constante em backends modernos, e você já trabalhou com os dois. Ter usado, porém, não é o mesmo que decidir: a maior parte do seu trabalho recente é relacional, e o instinto que você pratica todo dia — e domina bem — é o normalizado. Este desafio existe para exercitar a decisão de modelagem do zero, de forma deliberada, com justificativa escrita a cada escolha de chave e índice. O erro mais comum de quem migra desse instinto para NoSQL é copiar a estrutura de tabelas relacionais para "coleções"/"tabelas" NoSQL, perdendo o ganho real: em NoSQL você modela **a partir dos padrões de acesso**, não a partir das entidades.
 
 ## Pré-requisito
 
