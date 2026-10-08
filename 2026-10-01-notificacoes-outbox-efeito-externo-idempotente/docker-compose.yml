@@ -1,0 +1,76 @@
+# Infraestrutura local — APOIO ao desafio.
+# Sobe só as dependências. Adicione aqui os seus serviços (api, relay,
+# consumer, reconciler) na Etapa 2 em diante.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: notifications
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app_local_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d notifications"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    environment:
+      RABBITMQ_DEFAULT_USER: app
+      RABBITMQ_DEFAULT_PASS: app_local_password
+    ports:
+      - "5672:5672"
+      - "15672:15672"  # painel: http://localhost:15672
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  sms-provider:
+    build: ./support/sms_provider
+    environment:
+      FAIL_RATE: ${FAIL_RATE:-0}
+      AMBIGUOUS_RATE: ${AMBIGUOUS_RATE:-0}
+      RATE_LIMIT: ${RATE_LIMIT:-0}
+      LATENCY_MS: ${LATENCY_MS:-50}
+      IDEMPOTENCY_SUPPORT: ${IDEMPOTENCY_SUPPORT:-on}
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./support/sms_provider/data:/data  # delivered.jsonl fica aqui
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request;urllib.request.urlopen('http://127.0.0.1:9000/health')"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  jaeger:
+    image: jaegertracing/all-in-one:1.62.0
+    environment:
+      COLLECTOR_OTLP_ENABLED: "true"
+    ports:
+      - "16686:16686"  # interface: http://localhost:16686
+      - "4317:4317"    # OTLP gRPC
+      - "4318:4318"    # OTLP HTTP
+
+  prometheus:
+    image: prom/prometheus:v2.55.1
+    volumes:
+      - ./support/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+volumes:
+  postgres_data:
+  rabbitmq_data:

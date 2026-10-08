@@ -1,0 +1,1178 @@
+[
+  {
+    "key": "O01",
+    "customer": "C01",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 13780,
+    "recipient_phone": null
+  },
+  {
+    "key": "O02",
+    "customer": "C02",
+    "items": [
+      {
+        "sku": "SKU-GIFT",
+        "name": "Vale-presente",
+        "unit_price_cents": 9000,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 9000,
+    "recipient_phone": null
+  },
+  {
+    "key": "O03",
+    "customer": "C03",
+    "items": [
+      {
+        "sku": "SKU-GIFT",
+        "name": "Vale-presente",
+        "unit_price_cents": 12000,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 12000,
+    "recipient_phone": null
+  },
+  {
+    "key": "O04",
+    "customer": "C04",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 10490,
+    "recipient_phone": null
+  },
+  {
+    "key": "O05",
+    "customer": "C05",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 26970,
+    "recipient_phone": null
+  },
+  {
+    "key": "O06",
+    "customer": "C06",
+    "items": [
+      {
+        "sku": "SKU-GIFT",
+        "name": "Vale-presente",
+        "unit_price_cents": 8000,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 8000,
+    "recipient_phone": null
+  },
+  {
+    "key": "O07",
+    "customer": "C07",
+    "items": [
+      {
+        "sku": "SKU-GIFT",
+        "name": "Vale-presente",
+        "unit_price_cents": 8000,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 8000,
+    "recipient_phone": null
+  },
+  {
+    "key": "O08",
+    "customer": "C08",
+    "items": [
+      {
+        "sku": "SKU-GIFT",
+        "name": "Vale-presente",
+        "unit_price_cents": 15000,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 15000,
+    "recipient_phone": null
+  },
+  {
+    "key": "O09",
+    "customer": "C09",
+    "items": [
+      {
+        "sku": "SKU-GIFT",
+        "name": "Vale-presente",
+        "unit_price_cents": 11000,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 11000,
+    "recipient_phone": null
+  },
+  {
+    "key": "O10",
+    "customer": "C10",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 18900,
+    "recipient_phone": null
+  },
+  {
+    "key": "O11",
+    "customer": "C11",
+    "items": [
+      {
+        "sku": "SKU-GIFT",
+        "name": "Vale-presente",
+        "unit_price_cents": 5000,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 5000,
+    "recipient_phone": null
+  },
+  {
+    "key": "O12",
+    "customer": "C12",
+    "items": [
+      {
+        "sku": "SKU-GIFT",
+        "name": "Vale-presente",
+        "unit_price_cents": 4999,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 4999,
+    "recipient_phone": null
+  },
+  {
+    "key": "O13",
+    "customer": "C13",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 18900,
+    "recipient_phone": null
+  },
+  {
+    "key": "O14",
+    "customer": "C14",
+    "items": [
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 5990,
+    "recipient_phone": "+5561987490893"
+  },
+  {
+    "key": "O15",
+    "customer": "C15",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 7990,
+    "recipient_phone": "+5541948840994"
+  },
+  {
+    "key": "O16",
+    "customer": "C16",
+    "items": [
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 26550,
+    "recipient_phone": "+5521912345"
+  },
+  {
+    "key": "O17",
+    "customer": "C17",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 23950,
+    "recipient_phone": null
+  },
+  {
+    "key": "O18",
+    "customer": "C24",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 25390,
+    "recipient_phone": null
+  },
+  {
+    "key": "O19",
+    "customer": "C30",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 41780,
+    "recipient_phone": null
+  },
+  {
+    "key": "O20",
+    "customer": "C26",
+    "items": [
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 20550,
+    "recipient_phone": null
+  },
+  {
+    "key": "O21",
+    "customer": "C25",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 19070,
+    "recipient_phone": null
+  },
+  {
+    "key": "O22",
+    "customer": "C30",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 20980,
+    "recipient_phone": null
+  },
+  {
+    "key": "O23",
+    "customer": "C21",
+    "items": [
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 11980,
+    "recipient_phone": null
+  },
+  {
+    "key": "O24",
+    "customer": "C19",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 49770,
+    "recipient_phone": null
+  },
+  {
+    "key": "O25",
+    "customer": "C26",
+    "items": [
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 18560,
+    "recipient_phone": null
+  },
+  {
+    "key": "O26",
+    "customer": "C19",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 6490,
+    "recipient_phone": null
+  },
+  {
+    "key": "O27",
+    "customer": "C19",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 4500,
+    "recipient_phone": null
+  },
+  {
+    "key": "O28",
+    "customer": "C23",
+    "items": [
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 24890,
+    "recipient_phone": null
+  },
+  {
+    "key": "O29",
+    "customer": "C27",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 26890,
+    "recipient_phone": null
+  },
+  {
+    "key": "O30",
+    "customer": "C28",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 23400,
+    "recipient_phone": null
+  },
+  {
+    "key": "O31",
+    "customer": "C24",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 7990,
+    "recipient_phone": null
+  },
+  {
+    "key": "O32",
+    "customer": "C26",
+    "items": [
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 6580,
+    "recipient_phone": null
+  },
+  {
+    "key": "O33",
+    "customer": "C21",
+    "items": [
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 5990,
+    "recipient_phone": null
+  },
+  {
+    "key": "O34",
+    "customer": "C30",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 45790,
+    "recipient_phone": null
+  },
+  {
+    "key": "O35",
+    "customer": "C24",
+    "items": [
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 25480,
+    "recipient_phone": null
+  },
+  {
+    "key": "O36",
+    "customer": "C22",
+    "items": [
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 13070,
+    "recipient_phone": null
+  },
+  {
+    "key": "O37",
+    "customer": "C19",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 31390,
+    "recipient_phone": null
+  },
+  {
+    "key": "O38",
+    "customer": "C28",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 14570,
+    "recipient_phone": null
+  },
+  {
+    "key": "O39",
+    "customer": "C24",
+    "items": [
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 12290,
+    "recipient_phone": null
+  },
+  {
+    "key": "O40",
+    "customer": "C27",
+    "items": [
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 23260,
+    "recipient_phone": null
+  },
+  {
+    "key": "O41",
+    "customer": "C20",
+    "items": [
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 18470,
+    "recipient_phone": null
+  },
+  {
+    "key": "O42",
+    "customer": "C22",
+    "items": [
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 7270,
+    "recipient_phone": null
+  },
+  {
+    "key": "O43",
+    "customer": "C28",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 20980,
+    "recipient_phone": null
+  },
+  {
+    "key": "O44",
+    "customer": "C18",
+    "items": [
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 33470,
+    "recipient_phone": null
+  },
+  {
+    "key": "O45",
+    "customer": "C29",
+    "items": [
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 13970,
+    "recipient_phone": null
+  },
+  {
+    "key": "O46",
+    "customer": "C18",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 19970,
+    "recipient_phone": null
+  },
+  {
+    "key": "O47",
+    "customer": "C30",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 7990,
+    "recipient_phone": null
+  },
+  {
+    "key": "O48",
+    "customer": "C24",
+    "items": [
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 19970,
+    "recipient_phone": null
+  },
+  {
+    "key": "O49",
+    "customer": "C29",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 27960,
+    "recipient_phone": null
+  },
+  {
+    "key": "O50",
+    "customer": "C30",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 41460,
+    "recipient_phone": null
+  },
+  {
+    "key": "O51",
+    "customer": "C28",
+    "items": [
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 9000,
+    "recipient_phone": null
+  },
+  {
+    "key": "O52",
+    "customer": "C20",
+    "items": [
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 3980,
+    "recipient_phone": null
+  },
+  {
+    "key": "O53",
+    "customer": "C23",
+    "items": [
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 29890,
+    "recipient_phone": null
+  },
+  {
+    "key": "O54",
+    "customer": "C29",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-CAP",
+        "name": "Boné",
+        "unit_price_cents": 4500,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 46800,
+    "recipient_phone": null
+  },
+  {
+    "key": "O55",
+    "customer": "C28",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 47080,
+    "recipient_phone": null
+  },
+  {
+    "key": "O56",
+    "customer": "C28",
+    "items": [
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-MUG",
+        "name": "Caneca",
+        "unit_price_cents": 3290,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 46370,
+    "recipient_phone": null
+  },
+  {
+    "key": "O57",
+    "customer": "C21",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 30880,
+    "recipient_phone": null
+  },
+  {
+    "key": "O58",
+    "customer": "C30",
+    "items": [
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 2
+      },
+      {
+        "sku": "SKU-BOTTLE",
+        "name": "Garrafa",
+        "unit_price_cents": 5990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 9970,
+    "recipient_phone": null
+  },
+  {
+    "key": "O59",
+    "customer": "C30",
+    "items": [
+      {
+        "sku": "SKU-TEE",
+        "name": "Camiseta",
+        "unit_price_cents": 7990,
+        "quantity": 1
+      }
+    ],
+    "total_cents": 7990,
+    "recipient_phone": null
+  },
+  {
+    "key": "O60",
+    "customer": "C18",
+    "items": [
+      {
+        "sku": "SKU-BAG",
+        "name": "Mochila",
+        "unit_price_cents": 18900,
+        "quantity": 1
+      },
+      {
+        "sku": "SKU-SOCK",
+        "name": "Meia",
+        "unit_price_cents": 1990,
+        "quantity": 2
+      }
+    ],
+    "total_cents": 22880,
+    "recipient_phone": null
+  }
+]

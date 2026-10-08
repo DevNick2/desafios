@@ -31,7 +31,8 @@ Construa, dentro desta pasta, um serviço em **Python 3.12 + FastAPI + PostgreSQ
 ### 1. Máquina de estados do pedido
 
 Endpoints:
-- `POST /orders` cria o pedido em `CREATED`.
+- `POST /customers` e `PATCH /customers/{id}` cadastram e alteram clientes (nome, telefone, `sms_opt_in`).
+- `POST /orders` cria o pedido em `CREATED`, com `order_version = 1`.
 - `POST /orders/{id}/transitions` com `{"to": "<STATUS>", "expected_version": <int>}` muda o status.
 
 Transições válidas (qualquer outra → `409 INVALID_TRANSITION`):
@@ -91,7 +92,9 @@ Em `seed/`: **30 clientes** e **60 pedidos** (com itens e totais em centavos), c
 - 1 cliente que **troca de telefone** às 23:00, depois de um abandono às 22:30 e antes do envio agendado das 08:00;
 - 2 transições **simultâneas** no mesmo pedido `CREATED` (`PAID` e `ABANDONED`, com o mesmo `expected_version`): exatamente uma vence.
 
-Junto, um roteiro `seed/transitions.jsonl` com a sequência de transições a aplicar e o horário simulado de cada uma. O serviço precisa aceitar um **relógio injetável** para os testes de horário.
+Junto, um roteiro `seed/transitions.jsonl` com a sequência de transições a aplicar e o horário simulado de cada uma. O serviço precisa aceitar um **relógio injetável** para os testes de horário; o replayer de apoio envia o horário de cada passo no header `X-Simulated-Now`.
+
+> **O dataset, o roteiro e o replayer já existem** (`seed/`, `support/seed_generator.py` e `support/replay.py`). São peças de apoio, descritas em [`support/APOIO.md`](support/APOIO.md), junto com o contrato que o replayer espera da sua API.
 
 A máquina de estados e a regra de notificação são **núcleo** e são suas.
 
@@ -122,7 +125,9 @@ Comportamento controlável por variável de ambiente:
 - `LATENCY_MS`: latência artificial;
 - `IDEMPOTENCY_SUPPORT`: `on` ou `off`.
 
-Ele grava **cada SMS "entregue"** num log append-only (`delivered.jsonl`), que é a prova usada nos critérios de aceite.
+Ele grava **cada SMS "entregue"** num log append-only (`delivered.jsonl`), que é a prova usada nos critérios de aceite. O comportamento também muda em tempo real por `POST /admin/config`, sem reiniciar.
+
+> **O provedor fake, o `docker-compose.yml` e os dublês de teste (`support/testing/fakes.py`) já existem.** O que cada um faz e não faz está em [`support/APOIO.md`](support/APOIO.md).
 
 A lógica que o desafio avalia (outbox, consumo, idempotência, máquina de estados da notificação, reconciliação, tracing) é **núcleo** e é sua.
 

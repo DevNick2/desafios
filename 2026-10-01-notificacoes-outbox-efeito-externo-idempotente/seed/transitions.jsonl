@@ -1,0 +1,170 @@
+{"at": "2026-10-05T08:00:00.000-03:00", "action": "create_order", "order": "O36"}
+{"at": "2026-10-05T08:05:00.000-03:00", "action": "transition", "order": "O36", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T08:15:00.000-03:00", "action": "create_order", "order": "O54"}
+{"at": "2026-10-05T08:30:00.000-03:00", "action": "create_order", "order": "O13"}
+{"at": "2026-10-05T08:30:00.000-03:00", "action": "create_order", "order": "O22"}
+{"at": "2026-10-05T08:35:00.000-03:00", "action": "transition", "order": "O13", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T08:35:00.000-03:00", "action": "transition", "order": "O22", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T09:00:00.000-03:00", "action": "create_order", "order": "O01"}
+{"at": "2026-10-05T09:00:00.000-03:00", "action": "create_order", "order": "O37"}
+{"at": "2026-10-05T09:05:00.000-03:00", "action": "transition", "order": "O01", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T09:05:00.000-03:00", "action": "transition", "order": "O37", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T09:10:00.000-03:00", "action": "create_order", "order": "O02"}
+{"at": "2026-10-05T09:15:00.000-03:00", "action": "create_order", "order": "O14"}
+{"at": "2026-10-05T09:15:00.000-03:00", "action": "create_order", "order": "O40"}
+{"at": "2026-10-05T09:15:00.000-03:00", "action": "create_order", "order": "O42"}
+{"at": "2026-10-05T09:20:00.000-03:00", "action": "transition", "order": "O14", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T09:20:00.000-03:00", "action": "transition", "order": "O40", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T09:20:00.000-03:00", "action": "transition", "order": "O42", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T09:25:00.000-03:00", "action": "create_order", "order": "O15"}
+{"at": "2026-10-05T09:30:00.000-03:00", "action": "create_order", "order": "O06"}
+{"at": "2026-10-05T09:30:00.000-03:00", "action": "transition", "order": "O15", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T09:35:00.000-03:00", "action": "create_order", "order": "O16"}
+{"at": "2026-10-05T09:40:00.000-03:00", "action": "transition", "order": "O02", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T09:40:00.000-03:00", "action": "transition", "order": "O16", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T10:00:00.000-03:00", "action": "create_order", "order": "O03"}
+{"at": "2026-10-05T10:00:00.000-03:00", "action": "transition", "order": "O06", "to": "ABANDONED", "expected_version": 1, "note": "1º abandono do telefone compartilhado"}
+{"at": "2026-10-05T10:00:00.000-03:00", "action": "create_order", "order": "O58"}
+{"at": "2026-10-05T10:05:00.000-03:00", "action": "create_order", "order": "O04"}
+{"at": "2026-10-05T10:05:00.000-03:00", "action": "transition", "order": "O58", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T10:10:00.000-03:00", "action": "transition", "order": "O04", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T10:15:00.000-03:00", "action": "create_order", "order": "O05"}
+{"at": "2026-10-05T10:15:00.000-03:00", "action": "create_order", "order": "O24"}
+{"at": "2026-10-05T10:20:00.000-03:00", "action": "transition", "order": "O05", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T10:30:00.000-03:00", "action": "transition", "order": "O03", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T10:30:00.000-03:00", "action": "create_order", "order": "O48"}
+{"at": "2026-10-05T10:35:00.000-03:00", "action": "transition", "order": "O48", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T10:45:00.000-03:00", "action": "transition", "order": "O24", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T10:45:00.000-03:00", "action": "create_order", "order": "O32"}
+{"at": "2026-10-05T10:45:00.000-03:00", "action": "create_order", "order": "O34"}
+{"at": "2026-10-05T10:50:00.000-03:00", "action": "transition", "order": "O34", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T11:00:00.000-03:00", "action": "create_order", "order": "O11"}
+{"at": "2026-10-05T11:00:00.000-03:00", "action": "create_order", "order": "O23"}
+{"at": "2026-10-05T11:00:00.000-03:00", "action": "create_order", "order": "O26"}
+{"at": "2026-10-05T11:00:00.000-03:00", "action": "create_order", "order": "O50"}
+{"at": "2026-10-05T11:05:00.000-03:00", "action": "create_order", "order": "O12"}
+{"at": "2026-10-05T11:05:00.000-03:00", "action": "transition", "order": "O23", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T11:05:00.000-03:00", "action": "transition", "order": "O24", "to": "PAID", "expected_version": 2}
+{"at": "2026-10-05T11:05:00.000-03:00", "action": "transition", "order": "O26", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T11:05:00.000-03:00", "action": "transition", "order": "O50", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T11:15:00.000-03:00", "action": "create_order", "order": "O18"}
+{"at": "2026-10-05T11:20:00.000-03:00", "action": "transition", "order": "O18", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T11:30:00.000-03:00", "action": "transition", "order": "O11", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T11:30:00.000-03:00", "action": "create_order", "order": "O25"}
+{"at": "2026-10-05T11:35:00.000-03:00", "action": "transition", "order": "O12", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T12:00:00.000-03:00", "action": "create_order", "order": "O17"}
+{"at": "2026-10-05T12:00:00.000-03:00", "action": "transition", "order": "O25", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T12:00:00.000-03:00", "action": "transition", "order": "O36", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR645276696"}
+{"at": "2026-10-05T12:00:00.000-03:00", "action": "create_order", "order": "O52"}
+{"at": "2026-10-05T12:10:00.000-03:00", "action": "transition", "order": "O17", "to": "PAID", "expected_version": 1, "concurrent": "G1", "note": "simultânea com ABANDONED: só uma vence"}
+{"at": "2026-10-05T12:10:00.000-03:00", "action": "transition", "order": "O17", "to": "ABANDONED", "expected_version": 1, "concurrent": "G1", "note": "simultânea com PAID: só uma vence"}
+{"at": "2026-10-05T12:15:00.000-03:00", "action": "create_order", "order": "O21"}
+{"at": "2026-10-05T12:20:00.000-03:00", "action": "transition", "order": "O21", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T12:30:00.000-03:00", "action": "create_order", "order": "O07"}
+{"at": "2026-10-05T12:30:00.000-03:00", "action": "transition", "order": "O52", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T12:30:00.000-03:00", "action": "create_order", "order": "O55"}
+{"at": "2026-10-05T12:35:00.000-03:00", "action": "transition", "order": "O55", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T12:45:00.000-03:00", "action": "create_order", "order": "O43"}
+{"at": "2026-10-05T12:50:00.000-03:00", "action": "transition", "order": "O43", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T12:50:00.000-03:00", "action": "transition", "order": "O52", "to": "PAID", "expected_version": 2}
+{"at": "2026-10-05T13:00:00.000-03:00", "action": "transition", "order": "O07", "to": "ABANDONED", "expected_version": 1, "note": "2º abandono do mesmo telefone, 3 h depois"}
+{"at": "2026-10-05T13:00:00.000-03:00", "action": "create_order", "order": "O31"}
+{"at": "2026-10-05T13:00:00.000-03:00", "action": "transition", "order": "O37", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR550139320"}
+{"at": "2026-10-05T13:00:00.000-03:00", "action": "create_order", "order": "O46"}
+{"at": "2026-10-05T13:05:00.000-03:00", "action": "transition", "order": "O46", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T13:15:00.000-03:00", "action": "transition", "order": "O40", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR406002884"}
+{"at": "2026-10-05T13:15:00.000-03:00", "action": "transition", "order": "O42", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR318610946"}
+{"at": "2026-10-05T13:15:00.000-03:00", "action": "create_order", "order": "O44"}
+{"at": "2026-10-05T13:20:00.000-03:00", "action": "transition", "order": "O44", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T13:30:00.000-03:00", "action": "transition", "order": "O31", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T13:45:00.000-03:00", "action": "create_order", "order": "O30"}
+{"at": "2026-10-05T13:45:00.000-03:00", "action": "create_order", "order": "O53"}
+{"at": "2026-10-05T14:00:00.000-03:00", "action": "create_order", "order": "O10"}
+{"at": "2026-10-05T14:00:00.000-03:00", "action": "create_order", "order": "O19"}
+{"at": "2026-10-05T14:00:00.000-03:00", "action": "create_order", "order": "O49"}
+{"at": "2026-10-05T14:05:00.000-03:00", "action": "transition", "order": "O10", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T14:05:00.000-03:00", "action": "transition", "order": "O49", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T14:05:00.400-03:00", "action": "transition", "order": "O10", "to": "REFUNDED", "expected_version": 2}
+{"at": "2026-10-05T14:15:00.000-03:00", "action": "create_order", "order": "O47"}
+{"at": "2026-10-05T14:15:00.000-03:00", "action": "transition", "order": "O53", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T14:20:00.000-03:00", "action": "transition", "order": "O47", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T14:30:00.000-03:00", "action": "transition", "order": "O19", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T14:30:00.000-03:00", "action": "create_order", "order": "O35"}
+{"at": "2026-10-05T14:30:00.000-03:00", "action": "transition", "order": "O48", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR945436943"}
+{"at": "2026-10-05T14:30:00.000-03:00", "action": "create_order", "order": "O51"}
+{"at": "2026-10-05T14:35:00.000-03:00", "action": "transition", "order": "O35", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T14:35:00.000-03:00", "action": "transition", "order": "O51", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T14:45:00.000-03:00", "action": "transition", "order": "O34", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR276777762"}
+{"at": "2026-10-05T15:00:00.000-03:00", "action": "transition", "order": "O05", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR732719211"}
+{"at": "2026-10-05T15:00:00.000-03:00", "action": "transition", "order": "O23", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR976198296"}
+{"at": "2026-10-05T15:00:00.000-03:00", "action": "transition", "order": "O26", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR107721109"}
+{"at": "2026-10-05T15:00:00.000-03:00", "action": "create_order", "order": "O33"}
+{"at": "2026-10-05T15:00:00.000-03:00", "action": "transition", "order": "O50", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR477040284"}
+{"at": "2026-10-05T15:00:00.000-03:00", "action": "create_order", "order": "O60"}
+{"at": "2026-10-05T15:05:00.000-03:00", "action": "transition", "order": "O33", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T15:05:00.000-03:00", "action": "transition", "order": "O60", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T15:15:00.000-03:00", "action": "create_order", "order": "O29"}
+{"at": "2026-10-05T15:45:00.000-03:00", "action": "transition", "order": "O29", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T16:00:00.000-03:00", "action": "transition", "order": "O13", "to": "SHIPPED", "expected_version": 2, "note": "sem tracking_code: deve falhar com 422"}
+{"at": "2026-10-05T16:00:00.000-03:00", "action": "create_order", "order": "O45"}
+{"at": "2026-10-05T16:05:00.000-03:00", "action": "transition", "order": "O29", "to": "PAID", "expected_version": 2}
+{"at": "2026-10-05T16:05:00.000-03:00", "action": "transition", "order": "O45", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T16:10:00.000-03:00", "action": "transition", "order": "O13", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR692749116"}
+{"at": "2026-10-05T16:15:00.000-03:00", "action": "transition", "order": "O21", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR679153816"}
+{"at": "2026-10-05T16:15:00.000-03:00", "action": "create_order", "order": "O28"}
+{"at": "2026-10-05T16:20:00.000-03:00", "action": "transition", "order": "O28", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T16:30:00.000-03:00", "action": "create_order", "order": "O41"}
+{"at": "2026-10-05T16:30:00.000-03:00", "action": "transition", "order": "O55", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR551450815"}
+{"at": "2026-10-05T17:00:00.000-03:00", "action": "transition", "order": "O14", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR149203558"}
+{"at": "2026-10-05T17:05:00.000-03:00", "action": "transition", "order": "O15", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR508157429"}
+{"at": "2026-10-05T17:10:00.000-03:00", "action": "transition", "order": "O16", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR853573823"}
+{"at": "2026-10-05T17:15:00.000-03:00", "action": "transition", "order": "O44", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR180792472"}
+{"at": "2026-10-05T17:30:00.000-03:00", "action": "create_order", "order": "O38"}
+{"at": "2026-10-05T17:30:00.000-03:00", "action": "create_order", "order": "O57"}
+{"at": "2026-10-05T18:00:00.000-03:00", "action": "create_order", "order": "O20"}
+{"at": "2026-10-05T18:00:00.000-03:00", "action": "create_order", "order": "O27"}
+{"at": "2026-10-05T18:00:00.000-03:00", "action": "transition", "order": "O38", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T18:00:00.000-03:00", "action": "transition", "order": "O49", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR427696198"}
+{"at": "2026-10-05T18:05:00.000-03:00", "action": "transition", "order": "O20", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T18:05:00.000-03:00", "action": "transition", "order": "O27", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T18:15:00.000-03:00", "action": "create_order", "order": "O56"}
+{"at": "2026-10-05T18:20:00.000-03:00", "action": "transition", "order": "O38", "to": "PAID", "expected_version": 2}
+{"at": "2026-10-05T18:30:00.000-03:00", "action": "transition", "order": "O35", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR303901283"}
+{"at": "2026-10-05T18:30:00.000-03:00", "action": "create_order", "order": "O39"}
+{"at": "2026-10-05T18:30:00.000-03:00", "action": "create_order", "order": "O59"}
+{"at": "2026-10-05T18:35:00.000-03:00", "action": "transition", "order": "O39", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T18:35:00.000-03:00", "action": "transition", "order": "O59", "to": "PAID", "expected_version": 1}
+{"at": "2026-10-05T19:00:00.000-03:00", "action": "transition", "order": "O33", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR200140141"}
+{"at": "2026-10-05T19:00:00.000-03:00", "action": "transition", "order": "O60", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR630833445"}
+{"at": "2026-10-05T20:00:00.000-03:00", "action": "transition", "order": "O45", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR236843584"}
+{"at": "2026-10-05T20:15:00.000-03:00", "action": "transition", "order": "O28", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR876693898"}
+{"at": "2026-10-05T22:00:00.000-03:00", "action": "create_order", "order": "O08"}
+{"at": "2026-10-05T22:00:00.000-03:00", "action": "transition", "order": "O20", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR269820594"}
+{"at": "2026-10-05T22:10:00.000-03:00", "action": "create_order", "order": "O09"}
+{"at": "2026-10-05T22:30:00.000-03:00", "action": "transition", "order": "O08", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T22:30:00.000-03:00", "action": "transition", "order": "O09", "to": "ABANDONED", "expected_version": 1}
+{"at": "2026-10-05T22:30:00.000-03:00", "action": "transition", "order": "O39", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR766964667"}
+{"at": "2026-10-05T22:30:00.000-03:00", "action": "transition", "order": "O59", "to": "SHIPPED", "expected_version": 2, "tracking_code": "BR126226563"}
+{"at": "2026-10-05T23:00:00.000-03:00", "action": "update_customer", "customer": "C09", "phone": "+5531938898923", "note": "troca de telefone antes do envio agendado das 08:00"}
+{"at": "2026-10-06T07:40:00.000-03:00", "action": "transition", "order": "O08", "to": "PAID", "expected_version": 2}
+{"at": "2026-10-06T08:00:00.000-03:00", "action": "transition", "order": "O36", "to": "REFUNDED", "expected_version": 3}
+{"at": "2026-10-06T09:00:00.000-03:00", "action": "transition", "order": "O37", "to": "REFUNDED", "expected_version": 3}
+{"at": "2026-10-06T09:15:00.000-03:00", "action": "transition", "order": "O40", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T09:15:00.000-03:00", "action": "transition", "order": "O42", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T10:30:00.000-03:00", "action": "transition", "order": "O48", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T10:45:00.000-03:00", "action": "transition", "order": "O34", "to": "REFUNDED", "expected_version": 3}
+{"at": "2026-10-06T11:00:00.000-03:00", "action": "transition", "order": "O23", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T11:00:00.000-03:00", "action": "transition", "order": "O26", "to": "REFUNDED", "expected_version": 3}
+{"at": "2026-10-06T11:00:00.000-03:00", "action": "transition", "order": "O50", "to": "REFUNDED", "expected_version": 3}
+{"at": "2026-10-06T12:15:00.000-03:00", "action": "transition", "order": "O21", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T12:30:00.000-03:00", "action": "transition", "order": "O55", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T13:15:00.000-03:00", "action": "transition", "order": "O44", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T14:00:00.000-03:00", "action": "transition", "order": "O49", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T14:30:00.000-03:00", "action": "transition", "order": "O35", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T15:00:00.000-03:00", "action": "transition", "order": "O33", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T15:00:00.000-03:00", "action": "transition", "order": "O60", "to": "REFUNDED", "expected_version": 3}
+{"at": "2026-10-06T16:00:00.000-03:00", "action": "transition", "order": "O45", "to": "REFUNDED", "expected_version": 3}
+{"at": "2026-10-06T16:15:00.000-03:00", "action": "transition", "order": "O28", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T18:00:00.000-03:00", "action": "transition", "order": "O20", "to": "DELIVERED", "expected_version": 3}
+{"at": "2026-10-06T18:30:00.000-03:00", "action": "transition", "order": "O39", "to": "REFUNDED", "expected_version": 3}
+{"at": "2026-10-06T18:30:00.000-03:00", "action": "transition", "order": "O59", "to": "REFUNDED", "expected_version": 3}

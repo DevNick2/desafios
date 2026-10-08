@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+.env
+replay_ids.json
+support/sms_provider/data/*.jsonl

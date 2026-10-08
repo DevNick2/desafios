@@ -1,0 +1,199 @@
+[
+  {
+    "key": "C01",
+    "name": "Customer C01",
+    "phone": "+551187654321",
+    "sms_opt_in": true,
+    "note": "telefone inválido: sem o 9 inicial"
+  },
+  {
+    "key": "C02",
+    "name": "Customer C02",
+    "phone": "+55198765432",
+    "sms_opt_in": true,
+    "note": "telefone inválido: DDD de 1 dígito"
+  },
+  {
+    "key": "C03",
+    "name": "Customer C03",
+    "phone": "+5521983197857",
+    "sms_opt_in": false,
+    "note": "opt-out com pedido abandonado"
+  },
+  {
+    "key": "C04",
+    "name": "Customer C04",
+    "phone": "+5521989254563",
+    "sms_opt_in": false,
+    "note": "opt-out com pedido pago"
+  },
+  {
+    "key": "C05",
+    "name": "Customer C05",
+    "phone": "+5541977827638",
+    "sms_opt_in": false,
+    "note": "opt-out com pedido enviado"
+  },
+  {
+    "key": "C06",
+    "name": "Customer C06",
+    "phone": "+5551910872248",
+    "sms_opt_in": true,
+    "note": "divide o telefone com o próximo cliente"
+  },
+  {
+    "key": "C07",
+    "name": "Customer C07",
+    "phone": "+5551910872248",
+    "sms_opt_in": true,
+    "note": "divide o telefone com o cliente anterior"
+  },
+  {
+    "key": "C08",
+    "name": "Customer C08",
+    "phone": "+5531966722344",
+    "sms_opt_in": true,
+    "note": "abandona às 22:30 e paga às 07:40"
+  },
+  {
+    "key": "C09",
+    "name": "Customer C09",
+    "phone": "+5561947295260",
+    "sms_opt_in": true,
+    "note": "troca de telefone às 23:00, depois do abandono"
+  },
+  {
+    "key": "C10",
+    "name": "Customer C10",
+    "phone": "+5561923718431",
+    "sms_opt_in": true,
+    "note": "pago e estornado em menos de 1 s"
+  },
+  {
+    "key": "C11",
+    "name": "Customer C11",
+    "phone": "+5561956164955",
+    "sms_opt_in": true,
+    "note": "carrinho de exatamente R$ 50,00"
+  },
+  {
+    "key": "C12",
+    "name": "Customer C12",
+    "phone": "+5551915831819",
+    "sms_opt_in": true,
+    "note": "carrinho de R$ 49,99"
+  },
+  {
+    "key": "C13",
+    "name": "Customer C13",
+    "phone": "+5581981971316",
+    "sms_opt_in": true,
+    "note": "tenta enviar sem tracking_code"
+  },
+  {
+    "key": "C14",
+    "name": "Customer C14",
+    "phone": "+5551994374605",
+    "sms_opt_in": true,
+    "note": "pedido com recebedor diferente"
+  },
+  {
+    "key": "C15",
+    "name": "Customer C15",
+    "phone": "+5541948840994",
+    "sms_opt_in": true,
+    "note": "pedido com recebedor igual ao comprador"
+  },
+  {
+    "key": "C16",
+    "name": "Customer C16",
+    "phone": "+5551970855700",
+    "sms_opt_in": true,
+    "note": "pedido com recebedor de telefone inválido"
+  },
+  {
+    "key": "C17",
+    "name": "Customer C17",
+    "phone": "+5521991756179",
+    "sms_opt_in": true,
+    "note": "duas transições simultâneas no pedido CREATED"
+  },
+  {
+    "key": "C18",
+    "name": "Customer C18",
+    "phone": "+5551995899313",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C19",
+    "name": "Customer C19",
+    "phone": "+5541953524491",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C20",
+    "name": "Customer C20",
+    "phone": "+5511940742311",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C21",
+    "name": "Customer C21",
+    "phone": "+5511952339391",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C22",
+    "name": "Customer C22",
+    "phone": "+5571945935572",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C23",
+    "name": "Customer C23",
+    "phone": "+5521938317637",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C24",
+    "name": "Customer C24",
+    "phone": "+5561938538251",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C25",
+    "name": "Customer C25",
+    "phone": "+5581963100814",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C26",
+    "name": "Customer C26",
+    "phone": "+5581929175900",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C27",
+    "name": "Customer C27",
+    "phone": "+5551928740864",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C28",
+    "name": "Customer C28",
+    "phone": "+5541985345555",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C29",
+    "name": "Customer C29",
+    "phone": "+5551988461803",
+    "sms_opt_in": true
+  },
+  {
+    "key": "C30",
+    "name": "Customer C30",
+    "phone": "+5571988320463",
+    "sms_opt_in": true
+  }
+]
