@@ -1,3 +1,22 @@
+[tool.fastapi]
+entrypoint = "main:app"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 79
+target-version = "py312"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+
 [project]
 name = "2026-09-08-integracao-legado-cache-resiliente"
 version = "0.1.0"
@@ -6,4 +25,14 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi[standard]>=0.141.1",
+]
+
+[dependency-groups]
+dev = [
+    "coverage>=7.16.1",
+    "pytest-asyncio>=1.4.0",
+    "pytest-watcher>=0.6.3",
+    "pytest>=9.1.1",
+    "redis>=8.1.0",
+    "ruff>=0.16.10",
 ]
